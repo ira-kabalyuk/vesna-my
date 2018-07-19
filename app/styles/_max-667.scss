@@ -1,0 +1,543 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+@media only screen and (max-width: 667px) {
+
+  .section {
+    padding: 30px 0;
+
+    &.bt {
+      padding: 0 0 30px 0;
+    }
+  
+    &.top {
+      padding: 30px 0 0 0;
+    }
+  }
+
+  
+  .button {    
+
+    &.red {
+
+      &.button.red.button--pipaluk {
+        padding: 12px 20px;
+      }
+    }
+  }
+
+  .head-block-descr {
+
+    .button {
+      margin-top: 15px;
+    }
+
+  }
+
+  .descr-wrap {
+    padding: 15px 10px;
+  }
+
+  .head-block {
+
+    .img-wrap {
+      height: 260px;
+    }
+  }
+
+  .content {
+
+    &__list {
+      margin: 25px 0 25px 35px; 
+    }
+
+    &__item {
+      font-size: 14px;
+
+      a {
+        &:after {
+          width: 7px;
+          height: 7px;
+        }
+      }
+    }
+  }
+
+//content-section
+
+.content-block {
+
+  .col-100 {
+
+    &.flex {
+
+      .content-title {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.content-section {
+
+    .content-block {
+        margin-top: 30px;
+    }
+}
+
+.main {
+
+    &__item {
+        margin-bottom: 50px;
+
+        &:nth-last-child(-n+2) {
+          margin-bottom: 50px;
+        }
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+
+        &_1 {
+
+            .main-list-icon {
+                width: 36px;
+                height: 45px;
+            }
+        }
+
+        &_2 {
+            .main-list-icon {
+                width: 70px;
+                height: 53px;
+            }
+        }
+
+        &_3 {
+            .main-list-icon {
+                width: 54px;
+                height: 54px;
+            }
+        }
+
+        &_4 {
+            .main-list-icon {
+                width: 50px;
+                height: 55px;
+            }
+        }
+
+        &_7 {
+          .main-list-icon {
+            width: 65px;
+            height: 44px; 
+          }
+        }
+
+        &_8 {
+          .main-list-icon {
+              width: 47px;
+              height: 47px;
+              
+          }
+        }
+    }
+
+    .main-list-title-wrap {
+        min-height: 50px;
+        padding: 15px 20px 15px 110px;
+    }
+    
+    .main-list-icon {
+        top: -15px;
+    }
+
+    .main-list-title {
+        font-size: 16px;
+    }
+
+    &__item-column {
+      padding: 10px 0 10px 0;
+      position: relative;
+
+      .img-wrap {
+          position: static;         
+          width: 53px;
+          height: 53px;
+          margin-bottom: 15px;
+
+      }
+
+      .text-title {
+          margin-bottom: 10px;
+      }      
+  }
+}
+
+//content-section end 
+
+
+//feedback-section
+
+.feedback-section {
+
+  .name {
+    font-size: 18px;
+  }
+
+  .border-block {
+
+    .content-title {
+      width: 70%;
+		}		
+	
+  }
+ 
+}
+
+.border-block {
+  padding: 20px;
+  min-height: 220px;
+
+  &:after {
+    bottom: -25%;
+	}	
+	
+}
+
+//feedback-section end
+
+//blog-section
+
+  .blog {
+
+    &__item {
+
+      &.sm,
+      &.md {
+        height: 200px;
+      }
+
+      a {
+        padding: 20px;
+      }
+    }
+
+  }
+
+  .blog-item-text {
+    font-size: 14px;
+  }
+
+//blog-section end
+
+
+//article 
+
+.article-block  {
+	padding: 30px 0;
+}
+
+.article {
+
+	h3 {
+		font-size: 20px;
+
+  }
+  
+  .color-text {
+    font-size: 14px;
+  }  
+
+    p {
+      font-size: 14px;
+    }
+
+    .list-wrap {
+
+      ul {
+        width: calc(100% - 20px);        
+      }
+    }
+
+    ul {
+
+      li {
+        font-size: 14px;
+      }
+    }
+	}
+
+
+.article-section {
+
+  img {
+    max-height: 180px;
+  }
+
+}
+
+.quote-block {
+	padding: 20px;
+	
+	p {
+		font-size: 14px;
+	}
+
+	h4 {
+		font-size: 15px;		
+  }
+  
+  &.right {
+
+    p {
+      padding-right: 0;
+    }
+  }
+}
+
+.quote-block-wrap {
+	margin-left: 0;
+}
+
+.quote-block {
+      
+  &.lg {
+
+    p {
+      font-size: 26px;
+    }
+  }
+}
+
+//article-end
+
+
+//servises
+
+.paging {
+
+  &__item {
+    padding: 0 8px;
+  }
+}
+
+.article-img-section {
+
+	.img-wrap {
+		height: 260px;
+	}
+}
+
+.img-block {
+	padding-bottom: 90px;
+
+	
+	.img-wrap {
+		width: 146px;
+		height: 178px;
+	}
+}
+
+.invise-text  {
+  display: block;
+}
+
+.price-table-wrap {
+  overflow-x: hidden;
+  
+  .price-table {
+    display: inline-block;       
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+
+
+.servises-content-section {
+      
+  .bg-img-wrap {
+    height: 215px;
+  }
+}
+
+.quote-block-brd {
+  margin: 20px 0;
+  padding: 30px 20px;
+}
+
+.main-border-block { 
+  padding: 25px;
+
+  p {
+    font-size: 18px;
+  }
+
+  &__text-24 {
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+.faq-item {
+  width: calc(100% - 20px);
+
+  .panel-body {
+    font-size: 14px;
+  }
+}
+
+.faq-irem-title {
+  font-size: 16px;
+}
+
+
+
+//servises end
+
+
+.footer {
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    &__first-block {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      padding-top: 30px;
+      padding-bottom: 15px;
+    }
+
+    &__list {
+      width: 100%;
+    }
+
+    &__item {
+      width: 50%;
+      font-size: 14px;
+      line-height: 18px;
+    }
+	}
+	
+	.video-section {
+		max-height: 450px;		
+	}
+	
+	.video {			
+		height:450px;
+	}
+
+	.price-list {
+
+		li {
+			font-size: 14px;
+		}
+	}
+
+
+  .map-wrap {
+    height: 520px;
+  }
+
+
+  .contact-section {
+    padding: 40px 0;
+
+    .col-33 {
+      width: 100%;
+      flex-basis: 100%;
+    }
+
+    .content-title {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+
+    .sub-title {
+      padding-left: 0;
+      padding-right: 0;
+      font-size: 14px;
+    }
+
+    .button.red.button.red.button--pipaluk {
+      padding: 15px 20px;
+    }
+
+    .button span {
+        display: inline;
+      }
+  }
+
+  .servises-list {
+
+    p {
+      font-size: 14px;
+      span {
+        font-size: 14px;
+      }
+    }
+
+    li {
+      padding-top: 35px;
+
+      &:before {
+        font-size: 48px;
+        top: -22px;
+      }
+    }
+   
+  }
+
+  .modal {
+    padding-right: 10px;
+    padding-left: 10px;
+
+    .modal-content {
+      width: 100%;
+      padding: 10px;
+    }
+
+    button.close {
+      margin-right: 0;
+      margin-top: 0;
+    }
+
+    .form-wrap {
+      padding: 30px;
+      padding-bottom: 40px;
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 25px;
+    }
+
+    .form {
+
+      .form-input {
+        margin-bottom: 20px;
+      }
+
+      .button {
+        margin-top: 35px;
+        width: 100%;
+        font-size: 18px;
+      }
+    }
+
+    .button.red.button.red.button--pipaluk {
+      padding: 16px 20px;
+    }
+  }
+
+
+}

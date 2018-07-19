@@ -1,0 +1,178 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.is-hidden {
+    opacity:0;
+    }
+    
+.visible {
+    opacity:1;
+}
+
+.trans {
+	transition: all .4s ease 0s;
+}
+
+.clearfix {
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+}
+
+
+.img-wrap {
+	overflow: hidden;
+	
+
+	img {
+	width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+	vertical-align: top;
+	
+	font-family: 'object-fit: cover;';
+	}
+	
+	
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.flex {
+	display: flex;
+}
+
+.fe {
+	justify-content: flex-end;
+}
+
+.sb {
+	justify-content: space-between;
+}
+
+.fw {
+	flex-wrap: wrap;	
+}
+
+.colwrap {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+
+	&.bg {
+		padding: 30px 0;
+		background: #fdfcf3;
+		position: relative;
+
+		&:after {
+			content: "";
+			background: #fdfcf3;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			display: block;
+			top: 0;
+			right: -100%;
+		}
+
+		&:before {
+			content: "";
+			background: #fdfcf3;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			display: block;
+			top: 0;
+			left: -100%;
+		}
+		
+	}
+}
+
+
+.col-20 {
+	width: 20%;
+}
+
+.col-25 {
+	width: 25%;
+}
+
+.col-30 {
+	width: 30%;
+	flex-shrink: 0;
+}
+
+.col-33 {
+	width: 33.3%;
+	flex-shrink: 0;
+}
+
+.col-40 {
+  width: 40%;
+}
+
+.col-50 {
+	width: 50%;
+}
+
+
+.col-60 {
+	width: 60%;
+}
+
+.col-70 {
+	width: 70%;
+}
+
+.col-80 {
+	width: 80%;
+}
+
+.col-100 {
+	width: 100%;
+}
+
+
+.pl {
+	padding-left: 50px;
+}
+
+.pr {
+	padding-right: 50px;
+}
+
+.mh {
+	min-height: 370px;
+}
+
+.content-block {
+	width: calc(100% - 33.3%);
+
+	&.pl {
+		padding-left: 50px;
+	}
+
+	&.pr {
+		padding-right: 50px;
+	}
+}
+
+.main-top {	
+	margin-top: -225px;
+}
+
+.top-position-section {   
+    top: 95px;
+    margin-bottom: 95px;
+   position: relative;
+}

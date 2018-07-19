@@ -1,0 +1,13 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+@media only screen and (max-width: 1335px) {	
+
+	.pagewrap {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 20px;
+    }		
+
+}

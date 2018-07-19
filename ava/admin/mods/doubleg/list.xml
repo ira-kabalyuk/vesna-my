@@ -1,0 +1,10 @@
+<a>
+<set name="id" class="w80" title="id"  />
+<set name="foto1" title="фото 1" class="w200" />
+<set name="foto2" title="фото 2" class="w200" />
+<set name="rubric" title="рубрика" class="w400" />
+<set name="title" class="w300" title="название" />
+
+
+
+</a>

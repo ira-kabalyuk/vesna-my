@@ -1,0 +1,27 @@
+<set>
+<a name="main" title="Основные данные">
+
+<set name="title" type="text" class="w500" title="Имя" />
+<set name="meta-face" type="img" width="200" class="w200" path="uploads/news" json="rx:384,ry:384,prop:0,path:uploads/news,crop:1" title="Фото для плитки(384x384)" />
+<!--
+<set name="meta-fon" type="img" width="200" class="w200" path="uploads/news" json="rx:600,ry:807,prop:0,path:uploads/news,crop:1" title="Фото для  главной(600х807)" />
+-->
+<set name="meta-staff" type="text" class="w300" title="должность"/>
+<set name="meta-edu" type="text" class="w600" title="Образование, опыт"/>
+
+
+<set name="rubr_id" type="select" class="w400" multy="1" title="Салон" cont="#sql:select id,title from news_rubric where parent_id=$rel" />
+
+<!--set name="tag_id" type="list_checkbox" title="Теги" cont="#sql:select id,title from news_tag order by title" /-->
+<!--
+<set name="descr" type="textarea"   w="960" h="500"  title="Основное содержание" />
+-->
+<set name="short" type="textarea" rows="5" cols="100"  w="700" h="200"  title="Описание" />
+
+</a>
+
+
+<a name="photos" title="Дипломы"></a>	
+
+
+</set>

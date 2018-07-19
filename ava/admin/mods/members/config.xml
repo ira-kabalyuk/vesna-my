@@ -1,0 +1,16 @@
+<sets>
+<a name="base" title="Members module config" >
+<set name="limit" type="text" title="list users per page"/>
+</a>
+
+<a name="photos" title="Image Processing" prefix="photo">
+<set name="max_x" type="text" title="Width Dimensions"/>
+<set name="max_y" type="text" title="Height Dimensions"/>
+<set name="prop" type="checkbox" cont="1" title="Save Image Size"/>
+<set name="prew_x" type="text" title="Preview Size (Width)"/>
+<set name="prew_y" type="text" title="Preview Size (Height)"/>
+<set name="prew_p" type="checkbox" cont="1" title="Save Preview Size"/>
+</a>
+
+
+</sets>

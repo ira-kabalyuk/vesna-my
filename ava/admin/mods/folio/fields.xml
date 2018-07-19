@@ -1,0 +1,40 @@
+<set>
+<a name="main" title="Свойства Блога">
+<set name="date_pub" type="date" id="d1" class="w200" title="Дата публикации" />
+
+<set name="title" type="text" class="w500" title="Заголовок" />
+<set name="meta-title" type="text" class="w500" title="Заголовок H1" />
+<set name="rubr_id" type="select" class="w400" multy="1" title="Рубрика" cont="#sql:select id,title from news_rubric where parent_id=$rel" />
+<!--set name="tag_id" type="list_checkbox" title="Теги" cont="#sql:select id,title from news_tag order by title" /-->
+<set name="short" type="textarea" rows="5" cols="100"  w="700" h="200"  title="Анонс" />
+<!--
+<set name="descr" type="editor"   w="960" h="500"  title="Основное содержание" />
+-->
+</a>
+
+<a name="meta" title="Метаданные">
+<!--set name="anons" type="textarea"  class="w400" rows="6" cols="80" title="Краткое описание(для главной)" /-->
+<!--
+<set name="meta-top" type="img" width="280" class="w200" path="uploads/news" json="rx:389,ry:198,prop:0,path:uploads/news,crop:1" title="Фото для главной(398x198)" />
+-->
+<set name="meta-face" type="img" width="280" class="w200" path="uploads/news" json="rx:480,ry:480,prop:0,path:uploads/news,crop:1" title="Фото для плитки(480x480)" />
+<!--
+<set name="meta-big" type="img" class="w600" width="100" path="uploads/news" json="rx:1920,ry:365,prop:0,path:uploads/news,crop:1" title="Большая картинка (1920x365)" />
+
+<set name="meta-author" type="text" class="w300" title="Автор"/>
+<set name="meta-aface" type="img" width="100" class="w100" path="uploads/news" json="rx:100,ry:100,prop:0,path:uploads/news,crop:1" title="Фото автора(100x100)" />
+-->
+</a>
+<!--
+<a name="content" title="Контент-редактор">
+	<set name="smt_url" type="content" title="Визуальный редактор"/>
+</a>
+-->
+
+<a name="seo" title="SEO">
+<set name="guid" type="text" class="w400" title="Ссылка" />
+<set name="seo_t" type="text" class="w400" title="Тайтл" />
+<set name="seo_k" type="textarea" class="w400" title="Ключевые слова" />
+<set name="seo_d" type="textarea" class="w400" title="Дискриптор" />
+</a>
+</set>

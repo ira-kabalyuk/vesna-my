@@ -1,0 +1,36 @@
+<table>
+	<tbody id="tpl-row">
+	<tr>
+      	<td itemprop="name" style="position: relative;">Название процедуры</td>
+    	  <td><span itemprop="price">200<meta content="UAH" itemprop="priceCurrency"></span> грн.</td>
+ 	</tr>
+</tbody>
+ </table>
+
+
+<template id="tpl-table">
+ <div class="table-wrapper">
+		<div class="h-table trans">
+			<h2 class="trans" itemprop="name">Название раздела</h2>
+			<span class="toggler"></span>
+		</div>
+
+			<table>
+				<tbody>
+					<tr>
+						<td class="h-cell" colspan="3" itemprop="name">Заголовок</span></td>
+					</tr>
+					<tr>
+						<td itemprop="name">Название процедуры</td>
+						<td>
+										<div class="row">
+											<div class="col-sm-6 price-cell" itemprop="price">цена от</div>
+											<span class="dash">—</span>
+											<div class="col-sm-6 price-cell" itemprop="price">дена до</div>
+										</div>
+						</td>
+					</tr>
+					</tbody>
+			</table>
+	</div>
+</template>			

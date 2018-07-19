@@ -1,0 +1,285 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.descr-title {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+
+.descr-text {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+.content-title {
+    font-size: 36px;
+		font-weight: 700;
+		position: relative;
+        z-index: 1;
+        margin-bottom: 30px;
+
+    &.line-left {
+        position: relative; 
+        padding-left: 95px;       
+
+        &:before {
+            content:"";
+            display: inline-block;
+            width: 75px;
+            height: 8px;
+            background: $black;
+            position: absolute;
+            left: 0;
+            top: 17px;
+            
+        }
+    }
+
+    &.line-right {
+        position: relative;
+        padding-right: 80px;          
+
+        &:after {
+            content:"";
+            display: inline-block;
+            width: 75px;
+            height: 8px;
+            background: $black;
+            position: absolute;
+            right: 0;
+            top: 17px;
+            
+        }
+    }
+
+    &.min {
+        font-size: 30px;
+    }
+}
+
+.bg-title {
+	font-size: 36px;
+	font-weight: 700;
+	min-height: 125px;
+	display: flex;
+	align-items: center;
+	padding: 15px 15px 15px 0;
+	width: 50%;
+	position: relative;
+
+	&.blue {
+		background: $light-blue;
+
+		&:before {
+			content: "";
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: -100%;
+			background: $light-blue;
+		}
+	}
+}
+
+.text-title {
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    color: $red;   
+
+    &.min {
+        font-size: 18px;
+    }
+}
+
+
+
+.text-16 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.text-22 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5em;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.text-24 {
+	font-size: 24px;
+	line-height: 1.5em;
+}
+
+.text-30 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.text-32 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.text-36 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.content-link {
+    font-weight: 700;
+    font-size: 16px;
+    color: $red;
+    text-decoration: underline;
+
+    &:hover {
+        color: $red;
+        text-decoration: none;
+    }
+}
+
+
+.b {
+    font-weight: 700;
+}
+
+.i {
+    font-style: italic;
+
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.bg-title {
+        padding: 40px;
+    }
+   }
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+	.bg-title {
+		font-size: 24px;
+	}
+
+	.content-title {
+        margin-bottom: 20px;
+        
+        &.min {
+            font-size: 20px;
+        }
+
+        &.line-right {           
+
+            &:after {
+                display: none;
+            }
+        }
+        
+    }
+    
+    .text-22 {
+        font-size: 18px;       
+    }
+
+    .text-title {
+
+        &.min {
+            font-size: 16px;
+        }
+    }
+
+}
+
+
+
+@media only screen and (max-width: 667px) {
+
+    .title {
+        font-size: 26px;
+    }
+
+    .descr-title {
+        font-size: 16px;
+    }
+
+    .descr-text {
+        font-size: 14px;
+    }
+
+    .content-title {
+        font-size: 24px;       
+        
+        &.line-left {
+            padding-left: 60px;
+
+            &:before {
+                width: 50px;
+                height: 8px;
+                top: 11px;
+            }
+        }
+
+        &.line-right {           
+
+            &:after {
+                width: 50px;
+                height: 8px;
+                top: 11px;
+            }
+        }
+
+        &.min {
+            font-size: 18px;
+        }
+        
+    }
+
+    .bg-title {
+        width: 100%;
+    }
+
+    .text-16 {
+        font-size: 14px;
+		}
+		
+		.text-24 {
+			font-size: 14px;
+        }
+        
+        .content-link {
+            font-size: 14px;
+        }
+
+
+    .text-22 {
+        font-size: 14px;       
+    } 
+    
+    .text-title {
+
+        &.min {
+            font-size: 14px;
+        }
+    }
+}

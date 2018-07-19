@@ -1,0 +1,13 @@
+<sets>
+
+<a name="base" title="Настройки коментариев в товаре" >
+<set name="moder" type="checkbox" cont="1" title="Добавлять коменты без премодерации"/>
+<set name="social" type="checkbox" cont="1" title="Использовать авторизацию vk, facebook"/>
+<set name="fb_id" type="text" class="w200" title="facebook ID"/>
+<set name="fb_key" type="text" class="w400" title="facebook KEY"/>
+<set name="vk_id" type="text" class="w200" title="vkontakte ID"/>
+<set name="vk_key" type="text" class="w400" title="vkontakte KEY"/>
+<set name="admin" type="text" class="w300" title="Имя модератора"/>
+<set name="limit" type="text" class="w100" title="кол-во на/стр. в админе"/>
+</a>
+</sets>

@@ -1,0 +1,9 @@
+<sets>
+<a name="config" title="Настройки параметров страниц">
+
+
+	<set type="text" class="w300" name="smt_tpl" title="Шаблон контента" />
+	<set type="text" class="w300" name="smt_bloсks" title="Ссылка на шаблоны блоков" />
+
+</a>
+</sets>

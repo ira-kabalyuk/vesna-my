@@ -1,0 +1,15 @@
+<sets>
+<a title="Свойства раздела " name="face">
+	<set type="text" name="title" class="w300" title="*Название" />
+	<set type="text" class="w300" name="link" title="*Линк"/>
+	<set type="text" class="w300" name="prefix" title="Префикс линка"/>
+	<set type="text" class="w200" name="main_tpl" title="Шаблон рубрики" />
+	<set type="text" class="w200" name="one_tpl" title="Шаблон страницы" />
+</a>
+
+
+
+
+
+
+</sets>

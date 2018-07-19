@@ -1,0 +1,13 @@
+<set>
+<a name="main" title="Вопрос">
+<set name="date_pub" type="date" id="d1" class="w200" title="Дата публикации" />
+<set name="title" type="text" class="w500" title="Автор" />
+<set name="rubr_id" type="select" class="w400" multy="1" title="Рубрика" cont="#sql:select id,title from news_rubric where parent_id=$rel" />
+<!--set name="tag_id" type="list_checkbox" title="Теги" cont="#sql:select id,title from news_tag order by title" /-->
+<set name="short" type="textarea" rows="5" cols="100"  w="700" h="200"  title="Вопрос" />
+<set name="descr" type="textarea"  w="960" h="500"  title="Ответ" />
+</a>
+
+
+
+</set>

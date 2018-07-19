@@ -1,0 +1,10 @@
+<a>
+<set name="id" class="w80" title="id"  />
+<set name="img" class="w200" title="img"  />
+<set name="date" class="w200" title="date"  />
+<set name="title" class="w400" title="Автор" />
+<set name="cat" class="w200" title="рубрика" />
+
+
+
+</a>

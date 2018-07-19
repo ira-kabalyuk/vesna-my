@@ -1,0 +1,14 @@
+<sets>
+ 
+<a name="base" title="Настройки модуля Турбосмс" >
+
+<set type="checkbox" name="off" cont="1"  title="Отключить отправку смс" />
+<set type="checkbox" name="log" cont="1"  title="Включить подробный лог отправки смс" />
+<set type="text" class="w300" name="sign" title="*Подпись" />
+<set type="text" class="w200" name="login" title="*Логин (для подкл к шлюзу SOAP)" />
+<set type="text" class="w200" name="password" title="*Пароль" />
+
+</a>
+
+
+</sets>

@@ -1,0 +1,24 @@
+<sets>
+<a title="Свойства раздела " name="face">
+	<set type="text" name="title" class="w300" title="*Название" />
+	<set type="text" class="w300" name="link" title="*Линк"/>
+	<set type="text" class="w300" name="prefix" title="Префикс линка"/>
+	<set type="text" class="w200" name="main_tpl" title="Шаблон раздела" />
+	<set type="text" class="w200" name="one_tpl" title="Шаблон страницы" />
+	</a>
+
+<a title="SEO" name="seo">
+	<set type="text" class="w400" name="seo_t" title="Тайтл" />
+	<set type="textarea" cols="40" rows="4" name="seo_d" title="Описание(description)" />
+	<set type="textarea" cols="40" rows="4" name="seo_k" title="Ключевые слова(keywords)" />
+
+</a>
+
+	
+<a title="Страница раздела" name="meta" >
+	<set name="meta_ico" class="w200" type="img" path="uploads/rubric" json="path:uploads/rubric,rx:600,ry:600,prop:0" title="Фото рубрики (600x600)"/>
+
+	<set name="seotext" type="textarea" class="content col1" title="Сео-текст" />
+</a>	
+
+</sets>

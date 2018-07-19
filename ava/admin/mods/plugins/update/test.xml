@@ -1,0 +1,15 @@
+<db charset="utf8" engine="MyIsam">
+<table name="ukat" index="id,parent_id">
+<field name="id" type="int" len="10" def="0" />
+<field name="parent_id" type="int" len="10" def="0" />
+<field name="title" type="char" len="100" def="" />
+</table>
+
+<table name="uktest_info" index="id,sort">
+<field name="id" type="int(10)" def="0" />
+<field name="sort" type="tinyint(1)" def="1" />
+<field name="descr" type="text"  />
+<field name="title" type="char(64)"  />
+</table>
+
+</db>

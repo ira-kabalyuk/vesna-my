@@ -1,0 +1,8 @@
+<set>
+<a name="main" title="Перевод псевдонима">
+<set name="ru" type="textarea" class="w300" rows="5" cols="40" title="Русский" />
+<set name="ua" type="textarea" class="w300" rows="5" cols="40" title="Украинский" />
+<set name="en" type="textarea" class="w300" rows="5" cols="40" title="English" />
+
+</a>
+</set>

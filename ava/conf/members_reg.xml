@@ -1,0 +1,4 @@
+﻿<a>
+<set name="email" type="text" titl="Email" err="не введено или некорректный E-mail" check="2" access="2"  /> 
+<set name="passw" type="password" titl="пароль (не менее 6 символов)" err="длина пароля пароля должена быть не менее 6 символов!" check="6" access="1"   /> 
+</a>

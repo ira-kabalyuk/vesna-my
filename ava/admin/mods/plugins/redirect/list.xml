@@ -1,0 +1,4 @@
+<a>
+<set name="oldlink" class="w300" title="старая ссылка" />
+<set name="link" class="w300" title="новая ссылка" />
+</a>

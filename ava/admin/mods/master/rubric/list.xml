@@ -1,0 +1,6 @@
+<a>
+<set name="id" title="id" class="w30" />
+<set name="title" title="название салона" class="w300" />
+<set name="link" title="link" class="w200" />
+<set name="tool" title="Действия" class="w200" />
+</a>

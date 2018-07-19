@@ -1,0 +1,8 @@
+﻿<a>
+<set id="htm" name="Страницы" fold="htm"  />
+  <set id="valute" name="Курсы валют" fold="valute"  />
+  <set id="lang" name="Языки" fold="lang"  />
+ <set id="video" name="Видео" fold="video"  />
+ <set id="right_col" name="Правая колонка" fold="right_col"  />
+
+  </a>

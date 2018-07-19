@@ -1,0 +1,42 @@
+<set>
+<a name="main" title="Свойства Блога">
+<set name="date_pub" type="date" id="d1" class="w200" title="Дата публикации" />
+
+<set name="title" type="text" class="w500" title="Заголовок" />
+
+<set name="meta-face" type="img" width="400" class="w600" path="uploads/news" json="rx:632,ry:420,prop:0,path:uploads/news,crop:1" title="Фото для плитки(632x420)" />
+
+<!--
+<set name="rubr_id" type="select" class="w400" multy="1" title="Рубрика" cont="#sql:select id,title from news_rubric where parent_id=$rel" />
+<set name="tag_id" type="list_checkbox" title="Теги" cont="#sql:select id,title from news_tag order by title" />
+<set name="short" type="textarea" rows="5" cols="100"  w="700" h="200"  title="Анонс" />
+
+<set name="descr" type="editor"   w="960" h="500"  title="Основное содержание" />
+-->
+</a>
+
+
+
+<a name="content" title="Контент-редактор">
+    <set name="smt_url" id="1" type="content" title="Визуальный редактор"/>
+</a>
+
+<a title="Метатеги:" name="ogg">
+
+
+	
+	<set type="text" name="meta-og_image" translate="0" title="og:image" class="w500" />
+	<set type="text" name="meta-og_url"  title="og:url" class="w500" />
+	<set type="text" name="meta-og_title" title="og:title" class="w500" />
+	<set type="text" name="meta-og_descr" title="og:description" class="w500" />
+	
+	
+	
+</a>
+<a name="seo" title="SEO">
+<set name="guid" type="text" translate="0" class="w400" title="Ссылка" />
+<set name="seo_t" type="text" class="w400" title="Тайтл" />
+<set name="seo_k" type="textarea" class="w400" title="Ключевые слова" />
+<set name="seo_d" type="textarea" class="w400" title="Дискриптор" />
+</a>
+</set>

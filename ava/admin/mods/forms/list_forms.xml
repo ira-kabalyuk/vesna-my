@@ -1,0 +1,4 @@
+<a>
+<set name="id" class="w50" title="id" />
+<set name="title" type="text" class="w400" title="название" />
+</a>

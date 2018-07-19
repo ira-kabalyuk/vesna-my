@@ -1,0 +1,9 @@
+<a>
+<set name="id" class="w50" title="id"  />
+<set name="date_pub" class="w100" title="дата публикации"  />
+<set name="title" class="w300" title="заголовок новости" />
+<set name="cat" class="w200" title="рубрика" />
+<set name="tag" class="w200" title="Теги" />
+
+
+</a>

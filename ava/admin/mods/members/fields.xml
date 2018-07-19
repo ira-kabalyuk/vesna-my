@@ -1,0 +1,21 @@
+<sets>
+<a title="Members profile " name="face">
+	<set type="text" name="name" class="w300" title="Name" />
+	<set type="text" class="w300" name="email" title="email"/>
+	<set type="text" class="w300" name="passw" title="passw"/>
+	
+	<set type="select" class="w200" name="type" title="User type" cont="0:---,1:Сотрудник,2:Директор салона,3:Модератор"/>
+	<set name="paid" type="select" cont="0:без оплаты,1:оплачен" title="Абонемент" />
+	<set name="group" type="list_checkbox" cont="1:пользователи,2:курсы,3:Уроки" title="Администрирование" />
+</a>
+
+<a name="meta" title="Metadata">
+<set name="img" type="img" width="100" path="uploads/members" json="rx:140,ry:140,prop:0,path:uploads/members" title="Avatar" />
+<set name="phone" type="text" width="300" title="Телефон" />
+
+</a>
+
+<a name="payd" title="Payd history"></a>
+
+	
+</sets>

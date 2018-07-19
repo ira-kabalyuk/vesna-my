@@ -1,0 +1,30 @@
+
+
+<set>
+<a name="main" title="Свойства поста">
+<set name="date_pub" type="date" id="d1" class="w100" title="Дата публикации" />
+<set name="time" type="text" class="w100" title="Время публикации" />
+<set name="title" type="text" class="w500" title="Заголовок" />
+<set name="rubr_id" type="list_checkbox" title="Рубрика" cont="#sql:select id,title from news_rubric" />
+<set name="tag_id" type="list_checkbox" title="Теги" cont="#sql:select id,title from news_tag order by title" />
+<set name="short" type="editor"  w="700" h="200" toolbar="Basic" title="Анонс" />
+<set name="descr" type="editor"  w="960" h="500" toolbar="Default" title="Основное содержание" />
+</a>
+
+<a name="meta" title="Метаданные">
+<set name="face" type="img" width="100" path="uploads/news" json="rx:290,ry:120,prop:0,path:uploads/news" title="Превью (face)" />
+<set name="large" type="img" width="100" path="uploads/news" json="rx:940,ry:260,prop:0,path:uploads/news" title="Большое фото (large)" />
+<set name="addon" type="text" class="w400" title="Примечание"/>
+
+</a>
+<!--a name="umtags" title=" Umtag текст поста">
+<set name="umtag" type="textarea" class="w600" cols="70" rows="30" title="" />
+</a-->
+
+<a name="seo" title="Метатеги">
+<set name="guid" type="text" class="w400" title="Ссылка" />
+<set name="seo_t" type="text" class="w400" title="Тайтл" />
+<set name="seo_k" type="textarea" class="w400" title="Ключевые слова" />
+<set name="seo_d" type="textarea" class="w400" title="Дискриптор" />
+</a>
+</set>

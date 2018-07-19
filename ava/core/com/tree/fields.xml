@@ -1,0 +1,19 @@
+<sets>
+<a title="Свойства категории" name="face">
+	<set type="text" name="title" title="Название" />
+	<set type="checkbox" name="is_hidden" title="не отображать на сайте" cont="1" />
+	<set type="hidden" name="parent_id" id="phaser" title="Корневая категория" />
+	
+</a>
+
+<a title="SEO (линк, метатеги)" name="seo">
+	<set type="text" class="w400" name="link" title="Линк"/>
+	<set type="text" class="w300" name="seo_t" title="Заголовок " />
+	<set type="textarea" cols="40" rows="4" name="seo_d" title="Описание(description)" />
+	<set type="textarea" cols="40" rows="4" name="seo_k" title="Ключевые слова(keywords)" />
+</a>
+<a name="meta" title="Текстовое описание" >
+<set type="editor" w="500" h="200" name="meta_1" toolbar="Basic" title="Информация о разделе" />
+
+</a>
+</sets>

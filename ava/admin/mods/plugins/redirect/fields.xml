@@ -1,0 +1,13 @@
+<sets>
+<a title="Сыылка редиректа">
+<set name="oldlink" type="text" class="w300" title="старая ссылка"/>
+<set name="link" type="text" class="w300" title="новая ссылка"/>
+<set name="brand_id" type="select"   title="Бренд" cont="#sql:select id,title from skat_params_list where parent_id=90 order by title"/>
+<set name="cat_id"  type="select" script="multiple size=20"   title="Категория" id="sel_category" cont="#tree:select id,parent_id,title from skat_categories" />
+
+
+
+
+
+</a>
+</sets>

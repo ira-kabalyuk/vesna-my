@@ -1,0 +1,7 @@
+<sets>
+<a name="title" title="название">
+<set name="type" type="text" class="w200" title="Логин" />
+<set name="email" type="text" class="w200" title="E-mail" />
+<set name="passw" type="text" class="w200" title="Пароль" />
+</a>
+</sets>

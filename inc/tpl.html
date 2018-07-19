@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+</head>
+<body>
+	<div id="tool_tpl" class="tpl">
+		<div class="smt-float">
+			<div class="smt-tool">
+			<div class="tool-tpl-list">
+				<div rel="save"><i class="fa fa-fw fa-save"></i> <span>Save</span></div>
+			</div>
+			<div class="smt-scale">
+				<div class="smt-scale-tpl"></div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="del_tpl" class="tpl">
+		<button class="btn btn-xs btn-danger" id="smt-del"><i class="fa fa-times"></i></button>
+	</div>
+
+	<div id="smt_tool_tpl" class="tpl">
+		<div id="smt-mod-tool" class="smt-mod-tool">
+			<button class="btn btn-xs btn-danger" data-role="del" title="Удалить"><i class="fa fa-times"></i></button>
+			<button class="btn btn-xs btn-primary" data-role="up" title="переместить выше"><i class="fa fa-arrow-up"></i></button>
+			<button class="btn btn-xs btn-primary" data-role="down" title="переместить ниже"><i class="fa fa-arrow-down"></i></button>
+			<button class="btn btn-xs btn-success" data-role="edit" title="редактирование"><i class="fa fa-pencil"></i></button>
+			<button class="btn btn-xs btn-info ml10" data-role="html" title="редактировать как html"><i class="fa fa-codepen"></i></button>
+			<button class="btn btn-xs btn-info ml10" data-role="setup" title="настройка"><i class="fa fa-gear"></i></button>
+			<button class="btn btn-xs btn-warning" data-role="add" title="Добавить блок"><i class="fa fa-plus"></i></button>
+			<button class="btn btn-xs btn-success ml10" data-role="save" title="Сохранить"><i class="fa fa-save"></i></button>
+			
+	</div>
+
+
+
+	</div>
+
+	
+	<div id="wrap_tpl" class="tpl">
+
+		 <div id="smt-wrap-upload"><button class="smt-close btn btn-danger btn-xs" title="Закрыть" type="button"><i class="fa fa-times"></i></button></div>
+	</div>
+
+	<div id="row_item" class="tpl">
+		<div data-id="[id]" class="smt-row"><section><figure class="smt-scale">[content]</figure></section></div>
+	</div>
+
+</body>
+</html>

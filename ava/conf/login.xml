@@ -1,0 +1,6 @@
+<a>
+<set name="from_mail" type="text" titl="mail техподдержки" err="не введен mail" check="2" /> 
+<set name="is_ban" type="checkbox" titl="Не активировать без подтверждения регистрации" cont="1" /> 
+<set name="confirm" type="text" titl="id страницы подтверждения регистрации" err="не введен id страницы" check="1" /> 
+<set name="error" type="text" titl="id страницы ошибки подтверждения регистрации" err="не введен id страницы" check="1" />
+</a>

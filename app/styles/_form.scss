@@ -1,0 +1,39 @@
+.form-wrap {
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px rgba(207, 207, 207, 0.2);
+}
+
+.form {
+
+  > * {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  font-size: 100%;
+  padding: 5px 0;
+  box-shadow: none;
+  border-color: $border-pink;
+  border-width: 0 0 1px 0;
+  margin-bottom: 30px;
+}
+
+.form-input[placeholder] {
+  font-style: italic;
+}
+.form-input:focus[placeholder] {
+  font-style: normal;
+}
+.form-input:focus::-webkit-input-placeholder {color: transparent}
+.form-input:focus::-moz-placeholder          {color: transparent}
+.form-input:focus:-moz-placeholder           {color: transparent}
+.form-input:focus:-ms-input-placeholder      {color: transparent}

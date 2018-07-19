@@ -1,0 +1,338 @@
+<db> 
+<table name="cash_control" index="id"> 
+  <field name="id" type="int(10)" /> 
+  <field name="type" type="varchar(10)" def="0" /> 
+  <field name="linked" type="varchar(32)" /> 
+</table> 
+<table name="course" index="id,terms"> 
+  <field name="parent_id" type="int(10)" def="0" /> 
+  <field name="id" type="int(10)" /> 
+  <field name="terms" type="text" /> 
+  <field name="title" type="varchar(255)" /> 
+  <field name="is_hidden" type="tinyint(1)" /> 
+  <field name="sort" type="int(10)" /> 
+  <field name="date_add" type="int(10)" /> 
+  <field name="date_pub" type="int(10)" /> 
+</table> 
+<table name="course_answer" index="id,parent_id"> 
+  <field name="id" type="int(10)" /> 
+  <field name="parent_id" type="int(10)" /> 
+  <field name="txt" type="text" /> 
+  <field name="sort" type="tinyint(3)" /> 
+  <field name="is_true" type="tinyint(1)" /> 
+</table> 
+<table name="course_data"> 
+  <field name="parent_id" type="int(10)" /> 
+  <field name="metakey" type="varchar(16)" /> 
+  <field name="metavalue" type="text" /> 
+</table> 
+<table name="course_item" index="id,parent_id"> 
+  <field name="id" type="int(10)" /> 
+  <field name="parent_id" type="int(10)" /> 
+  <field name="sort" type="int(5)" /> 
+  <field name="descr" type="text" /> 
+  <field name="type" type="tinyint(1)" /> 
+</table> 
+<table name="course_lesson" index="id,parent_id,is_hidden,sort"> 
+  <field name="id" type="int(10)" /> 
+  <field name="parent_id" type="int(10)" /> 
+  <field name="title" type="varchar(255)" /> 
+  <field name="date_pub" type="int(10)" /> 
+  <field name="date_add" type="int(10)" /> 
+  <field name="is_hidden" type="tinyint(1)" /> 
+  <field name="sort" type="int(5)" /> 
+  <field name="is_video" type="tinyint(1)" /> 
+</table> 
+<table name="course_test" index="id,parent_id"> 
+  <field name="id" type="int(10)" /> 
+  <field name="parent_id" type="int(10)" /> 
+  <field name="level" type="tinyint(1)" /> 
+  <field name="is_hidden" type="tinyint(1)" /> 
+  <field name="ball" type="tinyint(3)" /> 
+</table> 
+<table name="form_fields"> 
+  <field name="id" type="tinyint(3)" /> 
+  <field name="parent_id" type="int(5)" /> 
+  <field name="is_hidden" type="tinyint(4)" def="0" /> 
+  <field name="sort" type="tinyint(3)" def="0" /> 
+  <field name="type" type="varchar(16)" /> 
+  <field name="name" type="varchar(100)" /> 
+  <field name="title" type="varchar(100)" /> 
+  <field name="error" type="varchar(250)" /> 
+  <field name="class" type="varchar(32)" /> 
+  <field name="check" type="tinyint(1)" def="0" /> 
+  <field name="cont_Id" type="int(10)" /> 
+</table> 
+<table name="form_info" index="id,parent_id,meta_id,metakey"> 
+  <field name="id" type="int(10)" /> 
+  <field name="parent_id" type="int(10)" /> 
+  <field name="meta_id" type="int(10)" /> 
+  <field name="metakey" type="varchar(32)" /> 
+  <field name="descr" type="text" /> 
+</table> 
+<table name="form_msg" index="id"> 
+  <field name="id" type="int(10)" /> 
+  <field name="form_id" type="int(10)" /> 
+  <field name="data_add" type="int(10)" /> 
+  <field name="url" type="varchar(200)" /> 
+  <field name="ip" type="varchar(32)" /> 
+  <field name="title" type="varchar(100)" /> 
+  <field name="is_hidden" type="tinyint(1)" def="1" /> 
+  <field name="status" type="tinyint(1)" /> 
+</table> 
+<table name="form_name" index="id"> 
+  <field name="id" type="int(5)" /> 
+  <field name="title" type="varchar(200)" /> 
+  <field name="is_hidden" type="tinyint(1)" def="0" /> 
+  <field name="tpl_ok" type="varchar(100)" /> 
+  <field name="msg" type="text" /> 
+  <field name="sms" type="text" /> 
+  <field name="tpl" type="varchar(100)" /> 
+  <field name="email" type="varchar(100)" /> 
+  <field name="sms_a" type="text" /> 
+  <field name="tel_admin" type="varchar(16)" /> 
+  <field name="is_sms" type="tinyint(1)" /> 
+  <field name="is_mail" type="tinyint(1)" /> 
+  <field name="tpl_mail" type="varchar(100)" /> 
+  <field name="is_asms" type="tinyint(1)" /> 
+</table> 
+<table name="history" index="id,hid"> 
+  <field name="id" type="int(10)" /> 
+  <field name="lang" type="varchar(2)" /> 
+  <field name="title" type="varchar(200)" /> 
+  <field name="descr" type="mediumtext" /> 
+  <field name="seo_t" type="text" /> 
+  <field name="seo_k" type="text" /> 
+  <field name="seo_d" type="text" /> 
+  <field name="params" type="varchar(100)" /> 
+  <field name="data_m" type="datetime" /> 
+  <field name="is_backup" type="tinyint(1) unsigned" def="0" /> 
+  <field name="hid" type="int(10) unsigned" /> 
+  <field name="user_id" type="int(3) unsigned" /> 
+</table> 
+<table name="ipban" index="id"> 
+  <field name="id" type="int(10)" /> 
+  <field name="ip" type="varchar(16)" /> 
+  <field name="is_hidden" type="tinyint(1)" /> 
+</table> 
+<table name="langs" index="id"> 
+  <field name="id" type="tinyint(3)" /> 
+  <field name="ln" type="varchar(3)" /> 
+  <field name="title" type="varchar(16)" /> 
+  <field name="is_hidden" type="tinyint(1)" def="0" /> 
+  <field name="icon" type="varchar(16)" /> 
+  <field name="parent_id" type="tinyint(1)" def="0" /> 
+  <field name="sort" type="int(3)" def="0" /> 
+</table> 
+<table name="lesson_data"> 
+  <field name="parent_id" type="int(10)" /> 
+  <field name="metakey" type="varchar(16)" /> 
+  <field name="metavalue" type="text" /> 
+</table> 
+<table name="links" index="parent_id,mod"> 
+  <field name="parent_id" type="int(10) unsigned" /> 
+  <field name="link" type="varchar(200)" /> 
+  <field name="mod" type="varchar(10)" /> 
+  <field name="submod" type="tinyint(1)" def="0" /> 
+</table> 
+<table name="members" index="id"> 
+  <field name="id" type="int(10)" /> 
+  <field name="name" type="varchar(200)" /> 
+  <field name="vk_id" type="varchar(64)" /> 
+  <field name="fb_id" type="varchar(64)" /> 
+  <field name="token" type="varchar(100)" /> 
+  <field name="date_add" type="int(10)" /> 
+  <field name="is_hidden" type="tinyint(1)" def="0" /> 
+  <field name="img" type="varchar(200)" /> 
+  <field name="status" type="tinyint(1)" /> 
+  <field name="email" type="varchar(100)" /> 
+  <field name="password" type="varchar(64)" /> 
+  <field name="type" type="tinyint(4)" /> 
+  <field name="paid" type="tinyint(1)" /> 
+  <field name="city" type="int(10)" /> 
+</table> 
+<table name="members_ball" index="user_id"> 
+  <field name="user_id" type="int(10)" /> 
+  <field name="ball" type="tinyint(3)" /> 
+  <field name="course_id" type="int(10)" /> 
+  <field name="lesson_id" type="int(10)" /> 
+  <field name="test_id" type="int(10)" /> 
+</table> 
+<table name="members_data"> 
+  <field name="parent_id" type="int(10)" /> 
+  <field name="metakey" type="varchar(16)" /> 
+  <field name="metavalue" type="text" /> 
+  <field name="expired" type="int(10)" def="0" /> 
+</table> 
+<table name="mods" index="parent_id,id"> 
+  <field name="parent_id" type="int(5)" /> 
+  <field name="mods" type="varchar(16)" /> 
+  <field name="link" type="varchar(64)" /> 
+  <field name="id" type="int(10)" /> 
+  <field name="is_hidden" type="tinyint(1)" /> 
+  <field name="title" type="varchar(64)" /> 
+  <field name="rubr" type="tinyint(4)" /> 
+  <field name="class" type="varchar(16)" /> 
+</table> 
+<table name="news" index="id,parent_id,sub_id,lang,terms,rubr_id,sort"> 
+  <field name="id" type="int(10)" /> 
+  <field name="parent_id" type="int(10)" /> 
+  <field name="sub_id" type="int(10)" /> 
+  <field name="date_pub" type="int(10)" /> 
+  <field name="date_add" type="int(10)" /> 
+  <field name="date_upd" type="int(10)" /> 
+  <field name="author" type="int(5)" def="0" /> 
+  <field name="is_hidden" type="tinyint(1)" def="0" /> 
+  <field name="lang" type="varchar(2)" def="ru" /> 
+  <field name="title" type="varchar(250)" /> 
+  <field name="short" type="text" /> 
+  <field name="descr" type="text" /> 
+  <field name="img" type="varchar(32)" /> 
+  <field name="terms" type="text" /> 
+  <field name="tag" type="text" /> 
+  <field name="guid" type="varchar(200)" /> 
+  <field name="seo_t" type="varchar(200)" /> 
+  <field name="seo_k" type="varchar(200)" /> 
+  <field name="seo_d" type="varchar(200)" /> 
+  <field name="seo_h" type="varchar(200)" /> 
+  <field name="rubr_id" type="int(10)" /> 
+  <field name="sort" type="int(10)" /> 
+  <field name="views" type="int(10)" /> 
+  <field name="coments" type="int(10)" /> 
+</table> 
+<table name="news_attached"> 
+  <field name="id" type="int(10)" /> 
+  <field name="parent_id" type="int(10)" /> 
+  <field name="fname" type="varchar(100)" /> 
+  <field name="title" type="varchar(200)" /> 
+  <field name="lang" type="varchar(2)" /> 
+  <field name="ext" type="varchar(4)" /> 
+  <field name="is_hidden" type="tinyint(1) unsigned" def="0" /> 
+  <field name="sort" type="tinyint(3) unsigned" def="0" /> 
+  <field name="fsize" type="varchar(24)" /> 
+</table> 
+<table name="news_history" index="history_id,parent_id,lang,terms,rubr_id,sort"> 
+  <field name="history_id" type="int(10)" /> 
+  <field name="parent_id" type="int(10)" /> 
+  <field name="date_pub" type="int(10)" /> 
+  <field name="date_add" type="int(10)" /> 
+  <field name="date_upd" type="int(10)" /> 
+  <field name="author" type="int(5)" def="0" /> 
+  <field name="is_hidden" type="tinyint(1)" def="0" /> 
+  <field name="lang" type="varchar(2)" def="ru" /> 
+  <field name="title" type="varchar(250)" /> 
+  <field name="short" type="text" /> 
+  <field name="descr" type="text" /> 
+  <field name="img" type="varchar(32)" /> 
+  <field name="terms" type="text" /> 
+  <field name="tag" type="text" /> 
+  <field name="guid" type="varchar(200)" /> 
+  <field name="seo_t" type="varchar(200)" /> 
+  <field name="seo_k" type="varchar(200)" /> 
+  <field name="seo_d" type="varchar(200)" /> 
+  <field name="seo_h" type="varchar(200)" /> 
+  <field name="rubr_id" type="int(10)" /> 
+  <field name="sort" type="int(10)" /> 
+  <field name="views" type="int(10)" /> 
+  <field name="coments" type="int(10)" /> 
+  <field name="id" type="int(10)" /> 
+</table> 
+<table name="news_metadata" index="parent_id"> 
+  <field name="parent_id" type="int(12)" /> 
+  <field name="metakey" type="varchar(64)" /> 
+  <field name="metavalue" type="text" /> 
+</table> 
+<table name="news_photo" index="parent_id,id"> 
+  <field name="parent_id" type="int(10)" /> 
+  <field name="id" type="int(10)" /> 
+  <field name="top" type="tinyint(1)" def="0" /> 
+  <field name="img" type="varchar(250)" def="no.png" /> 
+  <field name="descr" type="text" /> 
+  <field name="sort" type="tinyint(4)" def="0" /> 
+  <field name="is_hidden" type="tinyint(1)" def="0" /> 
+</table> 
+<table name="news_rubric" index="id,sub_id"> 
+  <field name="id" type="int(10)" /> 
+  <field name="parent_id" type="int(10)" def="0" /> 
+  <field name="title" type="varchar(200)" /> 
+  <field name="lang" type="varchar(2)" def="ru" /> 
+  <field name="is_hidden" type="tinyint(1)" def="0" /> 
+  <field name="sort" type="int(5)" def="0" /> 
+  <field name="link" type="varchar(100)" /> 
+  <field name="prefix" type="varchar(100)" /> 
+  <field name="main_tpl" type="varchar(100)" /> 
+  <field name="one_tpl" type="varchar(100)" /> 
+  <field name="sub_id" type="int(10)" /> 
+</table> 
+<table name="news_seo" index="id"> 
+  <field name="id" type="int(10)" /> 
+  <field name="seo_t" type="varchar(256)" /> 
+  <field name="seo_k" type="text" /> 
+  <field name="seo_d" type="text" /> 
+</table> 
+<table name="news_tag" index="id"> 
+  <field name="id" type="int(10)" /> 
+  <field name="slug" type="varchar(100)" /> 
+  <field name="title" type="varchar(250)" /> 
+  <field name="is_hidden" type="tinyint(1)" def="0" /> 
+  <field name="sort" type="int(5)" def="0" /> 
+  <field name="link" type="varchar(100)" /> 
+</table> 
+<table name="rubric_metadata" index="parent_id"> 
+  <field name="parent_id" type="int(10)" /> 
+  <field name="metakey" type="varchar(24)" /> 
+  <field name="metavalue" type="text" /> 
+</table> 
+<table name="smart_menu" index="id"> 
+  <field name="id" type="tinyint(4)" /> 
+  <field name="title" type="varchar(100)" /> 
+  <field name="extens" type="varchar(32)" /> 
+  <field name="pos" type="tinyint(3)" def="0" /> 
+  <field name="mod" type="varchar(16)" /> 
+  <field name="is_hidden" type="tinyint(1)" def="0" /> 
+  <field name="sort" type="tinyint(3)" def="0" /> 
+  <field name="parent_id" type="tinyint(3)" def="0" /> 
+  <field name="class" type="varchar(10)" /> 
+</table> 
+<table name="static" index="id,lang,is_hidden"> 
+  <field name="id" type="int(10)" /> 
+  <field name="lang" type="varchar(2)" /> 
+  <field name="title" type="varchar(200)" /> 
+  <field name="descr" type="mediumtext" /> 
+  <field name="short" type="text" /> 
+  <field name="seo_t" type="text" /> 
+  <field name="seo_k" type="text" /> 
+  <field name="seo_d" type="text" /> 
+  <field name="is_hidden" type="tinyint(4)" def="0" /> 
+  <field name="params" type="text" /> 
+  <field name="parent_id" type="int(10)" def="0" /> 
+  <field name="sort" type="int(5)" def="0" /> 
+  <field name="folder" type="tinyint(1)" def="0" /> 
+  <field name="menu" type="tinyint(1)" def="0" /> 
+</table> 
+<table name="users"> 
+  <field name="id" type="int(3)" /> 
+  <field name="login" type="varchar(64)" /> 
+  <field name="passw" type="varchar(64)" /> 
+  <field name="name" type="varchar(100)" /> 
+  <field name="email" type="varchar(100)" /> 
+  <field name="mail_passw" type="varchar(64)" /> 
+  <field name="group_id" type="tinyint(1)" /> 
+  <field name="is_hidden" type="tinyint(1)" def="0" /> 
+</table> 
+<table name="users_right" index="user_id,id"> 
+  <field name="user_id" type="int(5)" /> 
+  <field name="id" type="tinyint(4)" /> 
+  <field name="type" type="tinyint(4)" def="0" /> 
+</table> 
+<table name="video" index="id,sid"> 
+  <field name="id" type="int(10)" /> 
+  <field name="token" type="varchar(32)" /> 
+  <field name="poster" type="varchar(200)" /> 
+  <field name="title" type="varchar(200)" /> 
+  <field name="descr" type="varchar(200)" /> 
+  <field name="sid" type="varchar(20)" /> 
+  <field name="video" type="varchar(200)" /> 
+  <field name="type" type="tinyint(1)" /> 
+</table> 
+</db>

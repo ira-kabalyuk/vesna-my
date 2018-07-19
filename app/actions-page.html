@@ -1,0 +1,113 @@
+	{% extends "template.html" %}	
+	{% import "macros.html" as myMacros %}
+
+	{% block content %}
+	<main class="main actions-page">	
+		
+		<section class="actions-section">
+			<div class="pagewrap">				
+				<h2 class="content-title line-left">Акции</h2>
+				<ul class="blog__list">
+						{{ myMacros.blogList(className="md", imgPath="images/img-1.jpg", text="Лучший подарок к весенним праздникам — профессиональная косметика по выгодным ценам!") }}
+						{{ myMacros.blogList(className="md", imgPath="images/img-2.jpg", text="Лучший подарок к весенним праздникам — профессиональная косметика по выгодным ценам!") }}
+						<!--{{ myMacros.blogList(className="md", imgPath="images/img-2.jpg", text="Лучший подарок к весенним праздникам — профессиональная косметика по выгодным ценам!") }}
+						{{ myMacros.blogList(className="md", imgPath="images/img-1.jpg", text="Лучший подарок к весенним праздникам — профессиональная косметика по выгодным ценам!") }}-->
+				</ul>				
+			</div>
+		</section>
+		<section class="servises-content-section">
+			<div class="pagewrap">
+				<div class="colwrap">
+					<div class="col-50">
+						<p class="text-16">В нашем салоне профессиональная косметика по ценам косметики для домашнего ухода:</p>
+						<p class="invise-text">Листайте вправо и смотрите остальные пункты таблицы</p>
+							<div class="price-table-wrap">
+								<table class="price-table">
+									<thead>
+										<tr>
+										<th>Наименование</th>
+										<th>Интернет</th>
+										<th>У нас</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Medik8 serum C-TETRA </td>
+											<td>30мл-1750грн 60мл-нет</td>
+											<td>320 грн</td>
+										</tr>
+										<tr>
+											<td>Thalgo-Увлажняющая маска</td>
+											<td>75мг-1750гр	150мг-нет</td>
+											<td>720 грн</td>
+										</tr>
+										<tr>
+											<td>PRO-RENEWAL CLEANSER (очищающий мусс)</td>
+											<td>75мг-1750гр	150мг-нет</td>
+											<td>720 грн</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+					<div class="col-50 order not-mar">
+							<div class="col-100 flex fe">								
+								<h2 class="col-60 content-title pl line-right">Мы решили избавить Вас от проблемы поиска лучшего подарка на весенние праздники	</h2>
+							</div>						
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="servises-content-section mh">
+				<div class="img-wrap col-50 bg-img-wrap right">
+					<img src="images/photo-3.jpg" alt="">
+				</div>
+			<div class="pagewrap">
+				<div class="colwrap">
+					<div class="col-50 pr article order not-mar">
+						<h2 class="content-title line-left">Наша гордость</h2>
+						<p><span class="color-text">ЗНАМЕНИТАЯ ЛЕЦИТИНОВАЯ МАСКА, МАСОЧКА</span> так уважительно и ласково называют её наши клиенты. Любовь и уважение клиентов основано на её, действительно уникальных, а порой и волшебных, лечебных свойствах. Подробности <a href="">здесь</a></p>
+						<p><span class="color-text">ЛЕЧЕБНЫЙ КРЕМ, КРЕМЧИК</span> так уважительно и ласково называют её наши клиенты. Любовь и уважение клиентов основано на её, действительно уникальных, а порой и волшебных, лечебных свойствах. Подробности <a href="">здесь</a></p>
+						<p><span class="color-text"> БОЛТУШКА.</span> так уважительно и ласково называют её наши клиенты. Любовь и уважение клиентов основано на её, действительно уникальных, а порой и волшебных, лечебных свойствах. Подробности <a href="">здесь</a></p>						
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="blog-section light-blue">
+			<div class="pagewrap">
+				<div class="head-block">
+						<h2 class="content-title line-left">Новости</h2>
+						<ul class="blog__list">
+								{{ myMacros.blogList(className="sm", imgPath="images/img-1.jpg", text="Лучший подарок к весенним праздникам — профессиональная косметика по выгодным ценам!") }}
+								{{ myMacros.blogList(className="sm", imgPath="images/img-2.jpg", text="Лучший подарок к весенним праздникам — профессиональная косметика по выгодным ценам!") }}
+						</ul>
+				</div>
+			</div>
+		</section>
+		<section class="section bt deco-list-section">
+			<div class="pagewrap">
+				<div class="title-block">
+					<h2 class="content-title line-left">Это интересно</h2>
+					<a href="" class="content-link">Смотреть все</a>
+				</div>
+				<ol class="deco-list">
+					<li>
+						<a href="">
+							Полезные советы по красоте, здоровью и не только
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Полезные советы по красоте, здоровью и не только
+						</a>
+					</li>
+					<li>
+						<a href="">
+							Полезные советы по красоте, здоровью и не только
+						</a>
+					</li>
+				</ol>
+			</div>	
+		</section>	
+	</main>
+	 {% endblock %} 

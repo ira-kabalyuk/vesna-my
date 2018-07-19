@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sets>
+<a title="Свойства формы" name="main">
+	<set type="text" name="title" class="w400" title="Название формы" />
+	<set type="text" name="email" class="w400" title="E-mail для отправки" />
+	<set type="text" name="tpl" class="w200" title="Шаблон" />
+	<set type="text" name="tpl_ok" class="w200" title="Шаблон после отправки" />
+	<set type="checkbox" cont="1"  name="is_mail" title="Отправлять письмо пользователю" />
+	<set type="text" name="tpl_mail" class="w200" title="Шаблон письма" />
+</a>
+
+<a title="Настройки СМС" name="sms">
+	<set type="checkbox" cont="1" name="is_sms" title="Отправлять смс клиенту" />
+	<set type="textarea" name="sms" class="w400" rows="4" cols="40" title="SMS-сообщение клиенту" />
+	<set type="checkbox" cont="1" name="is_asms" title="Отправлять смс администратору" />
+	<set type="text" name="tel_admin" class="w200" title="телефон администратора(+380xxxxxxxxx)" />
+	<set type="textarea" name="sms_a" class="w400" rows="4" cols="40" title="SMS-сообщение администратору" />
+</a>
+
+</sets>

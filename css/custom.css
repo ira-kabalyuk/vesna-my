@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.pre{
+    white-space: pre-wrap;
+}
+.video{
+    min-height: 200px;
+}

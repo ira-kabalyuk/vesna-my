@@ -1,0 +1,30 @@
+<sets>
+ 
+<a name="base" title="Настройки модуля Вопросы" >
+<!--set name="att" type="checkbox" cont="1" title="Использовать аттачи"/-->
+	<set name="parent_id" type="hidden"  cont="#sql:select parent_id from mods where mods='faq'" />
+	<set name="title" type="text" class="w400" title="Название для хлебных крошек"/>
+	<set name="datesort" type="checkbox" cont="1"  title="Сортировка по дате"/>
+	<set name="limit" type="text" title="кол-во  на стр. в админе"/>
+	<set type="text" class="w300" name="prefix" title="Префикс линка"/>
+	<set type="text" class="w200" name="main_tpl" title="Шаблон рубрики" />
+	<set type="text" class="w200" name="one_tpl" title="Шаблон страницы" />
+
+</a>
+<a name="photos" title="Обработка изображений" prefix="photo">
+<set name="ingal" type="checkbox" cont="1" title="использовать встроенную фотогалерею"/>	
+<set name="max_x" type="text" title="Размер картинки по горизонтали"/>
+<set name="max_y" type="text" title="Размер картинки по вертикали"/>
+<set name="prop" type="checkbox" cont="1" title="сохранять пропорции"/>
+<set name="prew_x" type="text" title="Размер превью по горизонтали"/>
+<set name="prew_y" type="text" title="Размер превью по вертикали"/>
+<set name="prew_p" type="checkbox" cont="1" title="сохранять пропорции превью"/>
+</a>
+
+<a title="SEO" name="seo" class="fa-globe" prefix="seo">
+	<set name="seo_t" type="text" class="w700" title="Тайтл" />
+	<set name="seo_d" type="textarea" class="content col1" title="descriptions" />
+	<set name="seo_k" type="textarea" class="content col1" title="keywords" />
+</a>
+
+</sets>

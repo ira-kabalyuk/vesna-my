@@ -1,0 +1,26 @@
+<a>
+<set name="update" titl="Обновление"/>
+<set name="update" titl="Утилиты для работы с базой данных"/>
+<set name="sitemap" titl="Генерация google sitemap"/>
+<set name="turbosms" titl="Тест турбосмс"/>
+<set name="robots" titl="редактирование robots.txt"/>
+<set name="clearcache" titl="Сброс кеша memcached"/>
+<!--
+<set name="baners" titl="Управление банерами"/>
+<set name="dataimport" titl="Импорт данных"/>
+
+
+<set name="flashxml" titl="Экспорт сайта для flash"/>
+<set name="ekat" titl="Расширенный каталог"/>
+<set name="relink" titl="Перелинковка сайта"/>
+<set name="langs" titl="Языки сайта"/>
+<set name="picker" titl="Визуальный редактор стилей"/>
+<set name="import" titl="Утилиты для Оскомерца"/>
+<set name="artisteer" titl="импорт шаблонов Artisteer"/>
+
+<set name="dataimport" titl="Импорт таблиц"/>
+<set name="mailtpl" titl="Шаблоны писем"/>
+
+<set name="cupon" titl="Экспорт купонов"/>
+-->
+</a>

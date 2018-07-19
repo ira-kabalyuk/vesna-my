@@ -1,0 +1,10 @@
+<sets>
+ 
+<a name="base" title="Настройки модуля подписки Esputnik" >
+
+<set type="text" class="w400" name="login" title="*Логин " />
+<set type="text" class="w400" name="password" title="*Пароль" />
+</a>
+
+
+</sets>

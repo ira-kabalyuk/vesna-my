@@ -1,0 +1,5 @@
+<a>
+<set name="id" title="id" class="w30" />
+<set name="title" title="название" class="w400" />
+<set name="tool" title="Действия" class="w200" />
+</a>

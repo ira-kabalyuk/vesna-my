@@ -1,0 +1,1 @@
+{external:EXT_FOTO}

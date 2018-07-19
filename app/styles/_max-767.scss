@@ -1,0 +1,144 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+
+@media only screen and (max-width: 767px) {
+
+ //content-section
+
+ .main {
+
+  &__item {
+    width: calc(100% - 20px);
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 100px;
+    }
+  }
+
+}
+
+//end content-section
+
+//blog-section 
+
+.blog-section {
+  margin: 0  0 30px 0;
+
+  .head-block {
+    top: 0;
+  }
+}
+
+.blog {
+
+  &__item {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+  }
+}
+
+//end blog-section
+
+//servises
+
+.quote-block {
+
+	.icon {
+		position: absolute;
+		top: 40px;
+		left: 40px;
+	}
+
+	&:after {
+		width: 100%;
+	}
+
+	p {
+	margin-left: 0;
+	}
+
+	&.right {
+
+		.quote-block-wrap {
+			padding-right: 0;
+
+			&:after {
+				display: none;
+			
+			}
+		}
+	}
+}
+
+.img-section {
+	margin-bottom: 30px;
+}
+
+//servises
+
+
+    .footer {
+
+      &__copyright {
+        margin-top: 15px;
+      }
+
+      &__info {
+        flex-direction: column;
+        padding-top: 20px;
+      }
+
+      &__info-item {
+        width: 70%;
+      }
+
+      .schedule {
+        order: 3;
+      }
+		}
+		
+
+		.video-section {
+			max-height: 500px;		
+		}
+		
+		.video {			
+			height:500px;
+		}
+
+		.price-section {
+			margin: 50px 0 0 0;
+    }    
+    
+
+    .deco-list-section {
+      display: none;
+    }
+
+    //сердце
+
+    .decoration-list-section {
+
+      .deco-list-img-block {
+        width: 290px;     
+        margin-left: -145px;
+        height: 316px;
+      }
+      
+    }
+    .quote-block {
+      
+      &.lg {
+
+        p {
+          font-size: 30px;
+        }
+      }
+    }
+
+
+    //сердце конец
+}	
+

@@ -1,0 +1,60 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.contacts-page {
+  position: relative;
+
+  .main-top {
+    margin-top: -310px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.map-wrap {
+  height: 600px;
+
+}
+.coordinates-wrap {
+  padding: 40px 80px;
+}
+.contacts__info-item {
+  margin-bottom: 25px;
+
+  li {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    position: relative;
+
+    .icon {
+      position: absolute;
+      left: -20px;
+      top: 2px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact-section {
+  padding: 60px 0;
+  font-family: "GillSans", sans-serif;
+  font-weight: 400;
+
+  .content-title {
+      font-size: 30px;
+      line-height: 40px;
+  }
+
+  .sub-title {
+    padding-left: 95px;
+    padding-right: 70px;
+    font-size: 100%;
+    line-height: 24px;
+  }
+}

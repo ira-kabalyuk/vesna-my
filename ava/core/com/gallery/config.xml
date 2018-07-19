@@ -1,0 +1,10 @@
+<sets>
+<a name="set" title="Обработка изображений по умолчанию">
+ 	<set name="max_x" class="w50" title="Ширина основного фото" type="text"  />
+ 	<set name="max_y" class="w50" title="Высота основного фото" type="text"  />
+ 	<set name="prop" class="w50" title="Сохранять пропорции" type="checkbox" cont="1" />
+ 	<set name="prew_x" class="w50" title="Ширина иконки" type="text"  />
+ 	<set name="prew_y" class="w50" title="Высота иконки" type="text"  />
+ 	<set name="prew_p" class="w50" title="Сохранять пропорции" type="checkbox" cont="1" />
+</a>
+</sets>

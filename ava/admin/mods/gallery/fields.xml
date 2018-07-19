@@ -1,0 +1,12 @@
+<set>
+<a name="main" title="Свойства Фотографии">
+
+<set name="descr" type="text" class="w500" title="Заголовок" />
+<set name="meta-title" type="text" class="w500" title="Тайтл" />
+<set name="meta-alt" type="text" class="w500" title="Alt" />
+<set name="cat" type="select" class="w400" multy="1" title="Рубрика" cont="#sql:select id,title from news_rubric where parent_id=$rel" />
+
+<set name="img" type="img" width="280" class="w200" path="uploads/photo" json="rx:0,ry:0,prop:0,path:uploads/photo,crop:1" title="Фото " />
+
+</a>
+</set>

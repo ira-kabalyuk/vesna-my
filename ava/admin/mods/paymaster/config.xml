@@ -1,0 +1,22 @@
+<sets>
+ 
+<a name="base" title="Настройки модуля Paymaster" class="fa-cogs">
+<set type="text" class="w100" name="mer_id" title="*Merchant ID:" />
+
+<set type="text" class="w200" name="key" title="*Секретный ключ:" />
+<set type="text" class="w600" name="server_url" title="*URL страницы результата оплаты" />
+<set type="text" class="w600" name="ok_url" title="*URL страницы успешной оплаты" />
+<set type="text" class="w600" name="no_url" title="*URL страницы неуспешной оплаты" />
+<set type="select" class="w100" name="valute" cont="USD:USD,UAH:UAH,EUR:EUR" title="*Валюта товара" />
+<set type="text" class="w100" name="currency" title="Курс валюты по умолчанию" />
+<set type="text" class="w100" name="amount" title="Стоимость товара по умолчанию" />
+<set type="text" class="w600" name="xml_url" title="*URL для АПИ курсов валют (xml)" />
+
+<set type="checkbox" name="pre_req" cont="1"  title="Отправлять предзапрос (рекомендовано)" />
+<set type="checkbox" name="off" cont="1"  title="Отключить отправку смс" />
+<set type="checkbox" name="log" cont="1"  title="Включить подробный лог" />
+<set type="select" name="mode" cont="0:рабочий режим,1:тестовый"  class="w200" title="режим" />
+</a>
+
+
+</sets>

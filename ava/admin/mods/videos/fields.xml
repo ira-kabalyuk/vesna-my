@@ -1,0 +1,11 @@
+<set>
+<a name="main" title="Свойства Видео">
+
+<set name="descr" type="textarea" rows="5" cols="60" class="w500" title="Описание" />
+<set name="cat" type="select" class="w400" multy="1" title="Рубрика" cont="#sql:select id,title from news_rubric where parent_id=$rel" />
+
+<set name="link" type="text"  title="Ссылка на видео в youtube" />
+<set name="youtube" type="hidden" value="1" cont="1" />
+
+</a>
+</set>

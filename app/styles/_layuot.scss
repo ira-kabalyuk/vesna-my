@@ -1,0 +1,76 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+html {
+	height: 100%;	
+}
+
+body {	
+	font-family: "GillSans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+	color: $black;
+	background: #fff;	
+	min-width: 320px;
+	
+	//overflow-x: hidden;
+	
+}
+
+
+.wrapper {
+	overflow-x: hidden;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	
+}
+
+main {
+	flex: 1;
+
+	.img-pad-section {
+		padding: 70px 0 225px 0;
+	}
+}
+
+
+
+.pagewrap {
+	max-width: 1284px;
+	width: 1284px;
+    margin: 0 auto;
+}
+
+.light-blue {
+	background: $light-blue;
+}
+
+.title-block {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.section {
+	padding: 50px 0;
+
+	&.bt {
+		padding: 0 0 50px 0;
+	}
+
+	&.top {
+		padding: 50px 0 0 0;
+	}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.wrapper {
+		display: block;	
+	}
+   }
+
+

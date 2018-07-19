@@ -1,0 +1,29 @@
+<set>
+<a name="main" title="Свойства Отзыва">
+	<set name="title" type="text" class="w500" title="Автор" />
+	
+
+<set name="rubr_id" type="select" class="w400" multy="1" title="Рубрика" cont="#sql:select id,title from news_rubric where parent_id=$rel" />
+
+
+<set name="short" type="textarea" rows="5" cols="100"  w="700" h="200"  title="должность" />
+
+<set name="descr" type="textarea"   w="960" h="500"  title="Основное содержание" />
+
+<set name="meta-face" type="img" width="200" class="w200" path="uploads/news" json="rx:141,ry:141,prop:0,path:uploads/news,crop:1" title="Фото автора(141x141)" />
+<!--
+<set name="meta-big" type="img" width="400" class="w400" path="uploads/news" json="rx:600,ry:807,prop:0,path:uploads/news,crop:1" title="Фото внутри(600x807)" />
+<set name="meta-level" type="text" class="w300" title="Уровень" />
+-->
+</a>
+
+
+
+
+<a name="seo" title="SEO">
+<set name="guid" type="text" class="w400" title="Ссылка" />
+<set name="seo_t" type="text" class="w400" title="Тайтл" />
+<set name="seo_k" type="textarea" class="w400" title="Ключевые слова" />
+<set name="seo_d" type="textarea" class="w400" title="Дискриптор" />
+</a>
+</set>

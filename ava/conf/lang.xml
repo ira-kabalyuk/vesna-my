@@ -1,0 +1,4 @@
+<a>
+ <set name="ru" class="w50" titl="русский" type="text"  value="ru" />
+ <set name="ua" class="w50" titl="украинский" type="text"  value="украинский" />
+ </a>

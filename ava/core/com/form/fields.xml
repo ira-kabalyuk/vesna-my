@@ -1,0 +1,9 @@
+<a>
+<set name="name" class="w100" type="text" titl="Имя поля" />
+<set name="type"  type="select" titl="тип поля" cont="text:текст,textarea:текстовый блок,checkbox:чекбокс,phone:телефон,dirs:справочник" />
+<set name="class" class="w100" type="text" titl="CSS classname" />
+<set name="check" type="checkbox" titl="проверять" cont="1"/>
+<set name="title" class="w300" type="text" titl="Заголовок" />
+<set name="error" class="w300" type="text" titl="сообщение об ошибке" />
+<set name="cont_id" type="hidden" id="cont_id" />
+</a>

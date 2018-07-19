@@ -1,0 +1,27 @@
+<set>
+<a name="main" title="Свойства Акции">
+	<set name="title" type="text" class="w500" title="Название" />
+    <set name="meta-actionstop" type="date" class="w150" id="d2" title="дата окончания акции" />
+	<set name="meta-hb" type="text" class="w400" title="H1" />
+<set name="meta-face_alt" type="text" class="w500" title="Альт для плитки" />
+<set name="meta-face" type="img" width="400" class="w600" path="uploads/news" json="rx:632,ry:420,prop:0,path:uploads/news,crop:1" title="Фото для плитки(632x420)" />
+<!--
+<set name="rubr_id" type="select" class="w400" multy="1" title="Рубрика" cont="#sql:select id,title from news_rubric where parent_id=$rel" />
+-->
+
+
+</a>
+
+
+<a name="content" title="Контент-редактор">
+    <set name="smt_url" id="1" type="content" title="Визуальный редактор"/>
+</a>
+
+
+<a name="seo" title="SEO">
+<set name="guid" type="text" class="w400" title="Ссылка" />
+<set name="seo_t" type="text" class="w400" title="Тайтл" />
+<set name="seo_k" type="textarea" class="w400" title="Ключевые слова" />
+<set name="seo_d" type="textarea" class="w400" title="Дискриптор" />
+</a>
+</set>

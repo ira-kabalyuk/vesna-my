@@ -1,0 +1,49 @@
+<sets>
+<a title="Свойства страницы" name="content" class="fa-gear">
+	<set type="text" class="w600" name="title" title="Заголовок"/>
+	<set type="checkbox" name="folder" cont="1" title="Страница является разделом" />
+	<set type="checkbox" name="menu" cont="1" title="Отображать в основном меню" />
+	
+		<!--
+	<set name="meta_face" type="img" width="100" path="images/static" json="rx:320,ry:520,prop:0,path:images/static" title="Картинка (320x520)" />
+-->
+	<!--set name="meta_img" type="img" width="100" path="images/static" json="rx:320,ry:900,prop:0,path:images/static" title="Картинка для меню (320x900)" /-->
+</a>
+
+
+
+
+
+
+<a title="Доп. параметры" name="params" prefix="par_" class="fa-fire">
+	<set type="text" name="tpl" title="свой шаблон" class="w200" />
+	
+	
+</a>
+
+
+<a title="КОНТЕНТ" name="editor" class="fa-th-list">
+<set type="textarea" rows="6" cols="120"  class="w600" name="short" title="краткое содержание"/>	
+<!--
+<set type="editor" w="900" h="400" name="descr" toolbar="Default" title="Текст страницы"/>
+-->
+</a>
+<a title="Метатеги" name="meta" class="fa-paw">
+
+	<set type="text" name="meta_og_image" title="og:image" class="w500" />
+	<set type="text" name="meta_og_url" title="og:url" class="w500" />
+	<set type="text" name="meta_og_title" title="og:title" class="w500" />
+	<set type="text" name="meta_og_descr" title="og:description" class="w500" />
+	
+	
+</a>
+<a title="SEO (линк, метатеги)" name="seo" class="fa-link">
+	<set type="text" class="w400" name="link" title="Линк"/>
+	<set type="text" class="w300" name="seo_t" title="Заголовок страницы(для метатега title)"/>
+	<set type="textarea" cols="40" rows="4" name="seo_d" title="Описание(description)"/>
+	<set type="textarea" cols="40" rows="4" name="seo_k" title="Ключевые слова(keywords)"/>
+
+</a>
+
+
+</sets>

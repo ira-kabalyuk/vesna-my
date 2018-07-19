@@ -1,0 +1,15 @@
+<xml>
+<a name="main" title="Изображение" class="fa fa-camera-retro">
+<set name="_prew" type="prew" class="w200 play" title="Превью" /> 
+<set name="cat" type="select" class="w500" title="Раздел" cont="#sql:select id,title from foto_rubric where parent_id=$rel order by sort" />
+<set name="bfile" type="file" class="w200" title="загрузить изображение" />
+<set name="prew" type="checkbox" class="ace" cont="1" value="1" title="Создать превью из изображения" />
+<set name="sfile" type="file" class="w200" title="Загрузить свое превью" />
+<set name="descr" type="textarea" rows="4" cols="60" class="w500" title="Описание" />
+<!--
+<set name="link" type="text" class="w500" title="Ссылка" />
+-->
+</a>
+</xml>
+
+

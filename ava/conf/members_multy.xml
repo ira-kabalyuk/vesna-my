@@ -1,0 +1,7 @@
+<sets>
+<a title="Ребенок" name="baby">
+	<set name="name" title="Имя" type="text" />
+	<set name="male" title="пол" type="select" cont="1:мальчик,2:девочка" />
+	<set name="date" title="дата рождения" type="date" />
+</a>
+</sets>

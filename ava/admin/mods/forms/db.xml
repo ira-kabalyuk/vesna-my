@@ -1,0 +1,55 @@
+<a>
+<table name="form_fields"> 
+  <field name="id" type="tinyint(3)" /> 
+  <field name="parent_id" type="int(5)" /> 
+  <field name="is_hidden" type="tinyint(4)" def="0" /> 
+  <field name="sort" type="tinyint(3)" def="0" /> 
+  <field name="type" type="varchar(16)" /> 
+  <field name="name" type="varchar(100)" /> 
+  <field name="title" type="varchar(100)" /> 
+  <field name="error" type="varchar(250)" /> 
+  <field name="class" type="varchar(32)" /> 
+  <field name="check" type="tinyint(1)" def="0" /> 
+  <field name="cont_Id" type="int(10)" /> 
+</table> 
+
+<table name="form_info" index="id,parent_id,meta_id"> 
+  <field name="id" type="int(10)" /> 
+  <field name="parent_id" type="int(10)" /> 
+  <field name="meta_id" type="int(10)" /> 
+  <field name="descr" type="text" /> 
+</table> 
+
+<table name="form_msg" index="id"> 
+  <field name="id" type="int(10)" /> 
+  <field name="form_id" type="int(10)" /> 
+  <field name="data_add" type="int(10)" /> 
+  <field name="url" type="varchar(200)" /> 
+  <field name="ip" type="varchar(32)" /> 
+  <field name="title" type="varchar(100)" /> 
+  <field name="is_hidden" type="tinyint(1)" def="1" /> 
+</table> 
+
+<table name="form_name" index="id"> 
+  <field name="id" type="int(5)" /> 
+  <field name="title" type="varchar(200)" /> 
+  <field name="is_hidden" type="tinyint(1)" def="0" /> 
+  <field name="tpl_ok" type="varchar(100)" /> 
+  <field name="msg" type="text" /> 
+  <field name="sms" type="text" /> 
+  <field name="tpl" type="varchar(100)" /> 
+  <field name="email" type="varchar(100)" /> 
+  <field name="sms_a" type="text" /> 
+  <field name="tel_admin" type="varchar(16)" /> 
+  <field name="is_sms" type="tinyint(1)" /> 
+  <field name="is_mail" type="tinyint(1)" /> 
+  <field name="tpl_mail" type="varchar(100)" /> 
+  <field name="is_asms" type="tinyint(1)" /> 
+</table> 
+
+<table name="ipban" index="id"> 
+  <field name="id" type="int(11)" /> 
+  <field name="ip" type="varchar(16)" /> 
+  <field name="is_hidden" type="tinyint(1)" /> 
+</table> 
+</a>	

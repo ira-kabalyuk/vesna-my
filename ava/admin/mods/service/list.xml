@@ -1,0 +1,8 @@
+<a>
+<set name="id" class="w80" title="id"  />
+<set name="title" class="w600" title="Услуга" />
+<set name="rubric" title="раздел" class="w200" />
+<set name="tag" title="тег" class="w200" />
+
+
+</a>

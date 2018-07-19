@@ -1,0 +1,31 @@
+
+{% macro blogList(
+	className="",
+	showSpan=false,
+	imgPath="",	
+	text=""
+	
+	) 
+	%}	
+	<li class="blog__item {{className}} ">
+		<a href="article-page.html">
+			<div class="img-wrap">   
+				<img src="{{imgPath}}" alt="">
+			</div>			
+			<p class="blog-item-text">{{text}}
+			{% if showSpan %}	
+				<span>Читать далее</span>
+			{% endif %} 			
+			</p>
+		</a>
+	</li>
+	{% endmacro %}
+	
+
+	{% macro sliderMin( className="") 	%}
+		<div class="slider-min col-50 article {{className}} ">
+				{% include "slider-min.html" %}
+		</div>		
+	{% endmacro %}
+	
+	

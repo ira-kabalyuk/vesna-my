@@ -1,0 +1,7 @@
+<a>
+	<set name="id" class="w50" title="id"  />
+	<set name="date_add" class="w100 edit link pointer" title="дата публикации"  />
+	<set name="user_name" class="w200" title="Имя" />
+	<set name="descr" class="w300" title="текст" />
+	<set name="link" class="w300" title="статья" />
+</a>

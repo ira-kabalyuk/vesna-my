@@ -1,0 +1,128 @@
+	{% extends "template.html" %}	
+	{% import "macros.html" as myMacros %}
+
+	{% block content %}
+	<main class="main main-page">	
+		<section class="main-top-section top-position-section light-blue">
+				<div class="pagewrap">
+					<div class="head-block">
+						<div class="img-wrap">
+							<img src="images/photo-1.jpg" alt="">
+						</div>
+						<div class="head-block-content flex">
+							<div class="col-50 main-top">
+								<div class="head-block-descr">
+									<div class="descr-wrap">
+										<h1 class="descr-title">Мы не маскируем</h1>
+										<p class="descr-text">Не предлагаем временных решений. Мы избавляем от проблем. Мы не заставляем вас терпеть боль и неудобства. Просто шаг за шагом изменяем вашу кожу и жизнь к лучшему</p>
+										<button class="button red button--pipaluk button--inverted  button--round-s button--text-thick" data-target="#myModal" data-toggle="modal">Записаться <span>на консультацию</span></button>
+									</div>
+								</div>
+							</div>
+							<div class="col-50">
+								<ul class="content__list">
+									<li class="content__item">
+										<a href="">Лечение профилактики кожи</a>
+										<a href="">Лечение прыщей</a>
+										<a href="">Лесение демодекоза</a>
+										<a href="">Авторская программа омоложения</a>
+									</li>												
+									<li class="content__item">
+										<a href="">Лечение пигментации</a>
+										<a href="">Лечение акне</a>
+										<a href="">Лечение постакне</a>
+									</li>								
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section class="content-section">
+			<div class="pagewrap">
+				<div class="colwrap">
+					<div class="col-33">
+						<h2 class="content-title line-left">Почему выбирают нас?</h2>
+					</div>
+					<div class="content-block">
+						<ul class="main__list">
+							<li class="main__item main__item_1">
+								<div class="main-list-title-wrap">
+									<div class="img-wrap main-list-icon">
+										<img src="images/main-list-1.png" alt="">
+									</div>		
+									<p class="main-list-title">Отточенная методика лечения</p>
+								</div>
+								<p class="text-16">Методика лечения отточена до мелочей, проверена временем, получен огромный опыт применения, прогнозируемые </p>
+							</li>
+							<li class="main__item main__item_2">
+								<div class="main-list-title-wrap">
+									<div class="img-wrap main-list-icon">
+										<img src="images/main-list-2.png" alt="">
+									</div>		
+									<p class="main-list-title">Экономически обоснованный выбор</p>
+								</div>
+								<p class="text-16">Экономически обоснованный выбор – по сравнению с другими методиками результаты достигаются с меньшими затратами.</p>
+							</li>
+							<li class="main__item main__item_3">
+								<div class="main-list-title-wrap">
+									<div class="img-wrap main-list-icon">
+										<img src="images/main-list-3.png" alt="">
+									</div>		
+									<p class="main-list-title">От проблемы к ее решению</p>
+								</div>
+								<p class="text-16">Наши специалисты не просто назначают и проводят лечение, они ведут пациента от проблемы к ее решению и помогают удержать полученный результат. Индивидуально разрабатывается программа процедур, подбираются препараты.</p>
+							</li>
+							<li class="main__item main__item_4">
+								<div class="main-list-title-wrap">
+									<div class="img-wrap main-list-icon">
+										<img src="images/main-list-4.png" alt="">
+									</div>		
+									<p class="main-list-title">Без периода реабилитации</p>
+								</div>
+								<p class="text-16">Лечение не требует отказываться от привычного образа жизни. Не нужно сидеть дома и прятать лицо, как после агрессивных травмирующих процедур. Нет некомфортного периода реабилитации.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="feedback-section img-pad-section">
+			<div class="pagewrap">
+				<div class="colwrap">
+					<div class="content-block">
+						<div class="col-50">
+								{% include "paging.html" %}
+						</div>
+						<div class="feedback-block">
+							<p class="name">Вика</p>
+							<p class="client-info">37 лет, Киев</p>
+							<p class="feedback-text text-16">Метод икасалона красоты «Весна–С» работает 100%, просто иногда нужно больше времени.  Я очень довольна, что попала в руки профессионалов, спасибо за вашу работу! Все сотрудники высококвалифицированные, с многолетним опытом результативной работы. Дарите красоту  и дальше, успехов вам! </p>
+						</div>
+						<div class="feedback-block">
+							<p class="name">Таня</p>
+							<p class="client-info">37 лет, Киев</p>
+							<p class="feedback-text text-16">Метод икасалона красоты «Весна–С» работает 100%, просто иногда нужно больше времени.  Я очень довольна, что попала в руки профессионалов, спасибо за вашу работу! Все сотрудники высококвалифицированные, с многолетним опытом результативной работы. Дарите красоту  и дальше, успехов вам! </p>
+						</div>		
+					</div>
+					<div class="col-33">
+						<div class="border-block">
+								<h2 class="content-title line-right">Отзывы наших клиентов</h2>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+		<section class="blog-section min light-blue">
+			<div class="pagewrap">
+				<div class="head-block">
+						<h2 class="content-title line-left">Акции</h2>
+					<ul class="blog__list">
+							{{ myMacros.blogList(className="sm", imgPath="images/img-1.jpg", text="Лучший подарок к весенним праздникам — профессиональная косметика по выгодным ценам!") }}
+							{{ myMacros.blogList(className="sm", imgPath="images/img-2.jpg", text="Лучший подарок к весенним праздникам — профессиональная косметика по выгодным ценам!") }}
+					</ul>
+				</div>
+			</div>
+		</section>		
+	</main>
+	 {% endblock %} 

@@ -1,0 +1,51 @@
+<set>
+<a name="main" title="Основные данные">
+
+<set name="title" type="text" class="w500" title="Название" />
+<set name="meta-hb" type="text" class="w500" title="Заголовок H1" />
+
+<!--
+<set name="meta-face" type="img" width="192" class="w200" path="uploads/news" json="rx:384,ry:384,prop:0,path:uploads/news,crop:1" title="Фото для плитки(384x384)" />
+<set name="meta-big" type="img" class="w600" width="200" path="uploads/news" json="rx:1920,ry:472,prop:0,path:uploads/news,crop:1" title="Большая картинка (1920х472)" />
+-->
+
+
+
+
+<!--
+<set name="rubr_id" type="select" class="w400 select2" multy="1" title="Раздел" cont="#sql:select id,title from news_rubric where parent_id=$rel" />
+<set name="tag_id" type="list_checkbox" class="checkbox" title="Теги" cont="#sql:select id,title from news_tag where parent_id=$rel order by title" />
+
+<set name="descr" type="textarea"   w="960" h="500"  title="Основное содержание" />
+
+<set name="short" type="textarea" rows="5" cols="100"  w="700" h="200"  title="Краткое описание" />
+
+<set name="descr" type="editor" rows="6" cols="100"  w="700" h="200"  title="Полное описание" />
+-->
+</a>
+
+
+
+<a name="content" title="Контент-редактор">
+	<set name="smt_url" id="1" type="content" title="Визуальный редактор"/>
+</a>
+<a title="Метатеги:" name="ogg">
+
+
+    
+    <set type="text" name="meta-og_image" translate="0" title="og:image" class="w500" />
+    <set type="text" name="meta-og_url"  title="og:url" class="w500" />
+    <set type="text" name="meta-og_title" title="og:title" class="w500" />
+    <set type="text" name="meta-og_descr" title="og:description" class="w500" />
+    
+    
+    
+</a>
+<a name="seo" title="SEO">
+<set name="guid" type="text" translate="0" class="w400" title="Ссылка" />
+<set name="seo_t" type="text" class="w400" title="Тайтл" />
+<set name="seo_k" type="textarea" class="w400" title="Ключевые слова" />
+<set name="seo_d" type="textarea" class="w400" title="Дискриптор" />
+</a>
+
+</set>

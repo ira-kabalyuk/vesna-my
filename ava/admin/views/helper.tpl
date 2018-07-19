@@ -1,0 +1,1 @@
+<span class="helper" lang="{helper}" onclick="helper_(this)">подсказка</span>

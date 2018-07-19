@@ -1,0 +1,11 @@
+<sets>
+<a title="Профиль пользователя" name="profile">
+<set name="login" type="text" title="Логин" class="w400" />
+<set name="passw" type="text" title="Пароль" class="w400" />
+<set name="name" type="text" title="Имя" class="w400" />
+<set name="group_id" class="w400" type="select" cont="0:бесправные,1:суперадмины,2:контент-менеджеры" title="Группа" />
+</a>
+<a title="Права доступа" name="com" >
+<set name="rights" type="tree_checkbox" title="Доступ к компонентам(главное меню)" cont="select id,parent_id,title from smart_menu order by sort"/>
+</a>
+</sets>

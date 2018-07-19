@@ -1,0 +1,27 @@
+﻿<sets>
+<a name="config" title="Настройки сайта">
+	<set name="url_site" type="text" class="w300" title="URL сайта (http://mysite.com)" err="не введен URL сайта" check="0" /> 
+	<set name="pstart" type="select" title="стартовая страница" cont="#sql:select id,title from static where lang='ru' and is_hidden=0" /> 
+	<set name="cont_phone" type="textarea" cols="80" rows="4" class="w300" title="телефоны (контакты)" />
+	<set name="firm_addr" type="text" class="w600" title="адрес" />
+	<set name="firm_email" type="text" class="w300" title="e-mail" />
+	<set name="hide_setup" type="checkbox" cont="1" title="Скрыть внутри модулей настройки" />
+	
+</a>
+
+
+<a name="mail" title="Настройки отправки почты">
+<set name="mail_from" type="text" title="Адрес, от имени которого отправляются письма с сайта" />
+<set name="smtp_login" type="text" title="SMTP логин  (обычно это email)" />
+<set name="smtp_passw" type="text" title="SMTP пароль  " />
+<set name="smtp_subject" type="text" title="тема письма умолчанию  " />
+</a>
+
+<a name="sms" title="Настройки шлюза Turbosms">
+<set name="sms_sign" type="text" title="подпись" />
+<set name="sms_login" type="text" title="логин" />
+<set name="sms_passw" type="text" title="пароль" />
+
+</a>
+
+</sets>

@@ -1,0 +1,239 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs"; 
+
+.header {    
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid $light-blue;
+    height: 160px;
+    position: relative;
+    z-index: 999;
+    
+    .pagewrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    display: inline-block;
+    max-width: 342px;
+
+    img {
+        width: 100%;
+    }
+}
+ 
+    .nav {    
+    height: 160px;
+      display: flex;
+        align-items: center;      
+      font-size: 18px;    
+      
+
+      a {
+        color: $black;
+      }
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        li {
+            display: inline-block;
+
+            a {
+                display: inline-block;
+                padding: 15px 20px;
+                position: relative;
+                white-space: nowrap;
+
+                &:hover {
+                    color: $red;
+                    text-decoration: none;
+                  }                 
+              }
+
+              
+
+              &:hover {
+
+                a {
+                    color: $red;
+                }
+
+                .dropdown {
+
+                    li {
+                        a {
+                            color: $black;
+                        }
+
+                        &:hover {
+
+                            a {
+                                color: $red;
+                            }
+                        }
+                    }                 
+                    
+                }
+
+                .dropdownStart {
+
+                    &:after {
+                        transform: rotate(-135deg);    
+                    }
+                }
+
+            }
+
+            &.active {
+
+                a {
+                    color: $red;
+                }
+            }
+        }
+    } 
+
+}
+
+.dropdown {
+    position: absolute;   
+    background: $light-blue;
+    border-radius: 3px;
+    transition: all 0.2s linear;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(5px);
+    z-index: 999;
+    padding: 10px 0;
+
+    li {
+        display: block !important;
+        padding: 0;
+
+        a {
+            display: block !important;
+            padding: none;
+            padding: 7px 20px !important;
+            font-size: 14px;
+            white-space: normal;
+        }         
+    }
+  }
+
+  .dropdownStart {
+      position: relative;
+
+      &:after {
+          content: "";
+             border-bottom: 1px solid $red;
+            border-right: 1px solid $red;           
+            display: block;
+            height: 6px;
+            margin-top: -4px;
+            pointer-events: none;
+            position: absolute;
+            right: 9px;
+            top: 50%;          
+            transform-origin: 66% 66%;           
+            transform: rotate(45deg);           
+            transition: all 0.2s ease-in-out;
+            width: 6px;
+      }
+
+      
+  }
+
+  .lang {
+      width: 58px;
+      margin-left: 82px;
+
+
+    .nice-select {
+       border: none;
+        padding: 15px 20px;
+        font-size: 18px;
+        line-height: normal;
+        height: auto;
+        background: transparent;
+        border-radius: 0;
+
+        &:after {
+            content: "";
+            border-bottom: 1px solid $red;
+           border-right: 1px solid $red;           
+           display: block;
+           height: 6px;
+           margin-top: -4px;
+           pointer-events: none;
+           position: absolute;
+           right: 9px;
+           top: 50%;          
+           transform-origin: 66% 66%;           
+           transform: rotate(45deg);           
+           transition: all 0.2s ease-in-out;
+           width: 6px;  
+        }
+
+        .list {            
+            border: 1px solid $red;
+            box-shadow: none;
+            border-radius: 3px;
+            margin-top: 0;
+            width: 100%;
+
+            li {
+                display: block; 
+                padding: 10px 15px;
+                font-size: 16px;
+                line-height: normal;
+                min-height: auto;
+
+                &:hover {
+                    background: none;
+                    color: $red;
+                    font-weight: 400;
+                }
+
+                &.focus {
+                    background: none;
+                    color: $red;
+                    font-weight: 400;  
+                }
+            }
+        }
+
+        &.open {
+
+            &:after {
+                transform: rotate(-135deg); 
+            }
+        }
+    }
+  }
+
+  .toggle  {
+      display: none;
+  }
+
+  @media only screen and (min-width: 992px) {  
+
+    .menu {
+
+        li {
+            &:hover > .dropdown {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+
+}
+  
+  

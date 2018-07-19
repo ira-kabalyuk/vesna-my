@@ -1,0 +1,28 @@
+<set>
+<a name="main" title="Основные данные">
+
+<set name="title" type="text" class="w500" title="Название" />
+
+<set name="meta-one" type="img" width="300" class="w300" path="uploads/news" json="rx:900,ry:600,prop:0,path:uploads/news,crop:1" title="Фото 1 (900 x 600)" />
+<set name="meta-two" type="img" class="w300" width="300" path="uploads/news" json="rx:900,ry:600,prop:0,path:uploads/news,crop:1" title="Фото 2 (900 x 600)" />
+
+
+
+
+
+
+<set name="rubr_id" type="select" class="w400 select2" multy="1" title="Раздел" cont="#sql:select id,title from news_rubric where parent_id=$rel" />
+
+<!--
+<set name="descr" type="textarea"   w="960" h="500"  title="Основное содержание" />
+-->
+<set name="short" type="textarea" rows="5" cols="100"  w="700" h="200"  title="Краткое описание" />
+<!--
+<set name="descr" type="editor" rows="6" cols="100"  w="700" h="200"  title="Полное описание" />
+-->
+</a>
+
+
+
+
+</set>

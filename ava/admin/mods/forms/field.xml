@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sets>
+<a name="main" title="Свойства поля">
+
+<set name="title" type="text" class="w400" title="название" />
+<set name="name" type="text" class="w200" title="имя" />
+<set name="class" type="text" class="w200" title="CSS class" />
+<set name="type" type="select" cont="text:Текстовое поле,phone:телефон,email:Email" class="w200" title="тип" />
+<set name="check" cont="1" type="checkbox" title="Проверять" />
+<set name="is_hidden" cont="1" type="checkbox" title="скрыть поле" />
+<set name="error" type="text" class="w400" title="Сообщение об ошибке" />
+
+</a>
+</sets>

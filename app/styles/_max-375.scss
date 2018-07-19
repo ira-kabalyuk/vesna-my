@@ -1,0 +1,12 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+@media only screen and (max-width: 375px) {
+
+  .form-wrap {
+    padding: 40px 15px;
+  }
+
+}
+

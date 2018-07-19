@@ -1,0 +1,8 @@
+<a>
+<set name="id" title="id" class="w100" />
+<set name="date" title="дата" class="w200" />
+<set name="order_id" title="N заказа" class="w200" />
+<set name="email" title="email" class="w200" />
+<set name="amount" title="сумма, грн." class="w100" />
+<set name="upload" title="скачано" class="w50" />
+</a>

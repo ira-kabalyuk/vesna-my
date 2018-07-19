@@ -1,0 +1,40 @@
+<sets>
+ 
+<a name="base" title="Настройки модуля Акции" class="fa-cogs" >
+<!--set name="att" type="checkbox" cont="1" title="Использовать аттачи"/-->
+	<set name="parent_id" type="hidden"  cont="#sql:select parent_id from mods where mods='actions'" />
+	<set name="title" type="text" class="w400" title="Название для хлебных крошек"/>
+	<set name="datesort" type="checkbox" cont="1"  title="Сортировка по дате"/>
+	<set name="limit" class="w100" type="text" title="кол-во постов на страницу"/>
+	<set type="text" class="w300" name="prefix" title="Префикс линка"/>
+	<set type="text" class="w300" name="main_tpl" title="Шаблон рубрики" />
+	<set type="text" class="w300" name="one_tpl" title="Шаблон страницы" />
+	<set type="text" class="w300" name="smt_tpl" title="Шаблон контента" />
+	<set type="text" class="w300" name="smt_bloсks" title="Ссылка на шаблоны блоков" />
+
+</a>
+<a name="photos" title="Обработка изображений" prefix="photo" class="fa-picture-o">
+<set name="ingal"  class="w100" type="checkbox" cont="1" title="использовать встроенную фотогалерею"/>	
+<set name="max_x" class="w100" type="text" title="Размер картинки по горизонтали"/>
+<set name="max_y" class="w100" type="text" title="Размер картинки по вертикали"/>
+<set name="prop"  class="w100" type="checkbox" cont="1" title="сохранять пропорции"/>
+<set name="prew_x" class="w100" type="text" title="Размер превью по горизонтали"/>
+<set name="prew_y"  class="w100" type="text" title="Размер превью по вертикали"/>
+<set name="prew_p"  class="w100" type="checkbox" cont="1" title="сохранять пропорции превью"/>
+</a>
+
+<a title="Страница всех акций" name="main" class="fa-star">
+	<set name="h1" type="text" class="w700" title="заголовок H1" />
+	<!--
+	<set name="ico" class="w100" type="img" path="/images/cat" json="path:images/cat,rx:0,ry:0,prop:1" title="Иконка (png)"/>
+	-->
+	<set name="seotext" type="textarea" class="content col1" title="Сео-текст" />
+</a>	
+
+<a title="SEO" name="seo" class="fa-globe" prefix="seo">
+	<set name="seo_t" type="text" class="w700" title="Тайтл" />
+	<set name="seo_d" type="textarea" class="content col1" title="descriptions" />
+	<set name="seo_k" type="textarea" class="content col1" title="keywords" />
+</a>	
+
+</sets>

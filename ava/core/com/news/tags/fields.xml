@@ -1,0 +1,10 @@
+<sets>
+<a title="Свойства тега новостей" name="face">
+	<set type="text" name="title" class="w300" title="Название" />
+	<set type="text" class="w300" name="slug" title="Линк"/>
+	<set type="text" class="w300" name="seo_t" title="Заголовок страницы" />
+	<set type="textarea" cols="40" rows="4" name="seo_d" title="Описание(description)" />
+	<set type="textarea" cols="40" rows="4" name="seo_k" title="Ключевые слова(keywords)" />
+</a>
+
+</sets>

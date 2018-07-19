@@ -1,0 +1,4 @@
+<a>
+<set name="id" title="id" class="w30" />
+<set name="title" title="название раздела" class="w500" />
+</a>

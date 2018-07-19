@@ -1,0 +1,20 @@
+<sets>
+<a title="Свойства раздела" name="face">
+	<set type="text" name="title" class="w300" title="Название" />
+	<set type="text" class="w300" name="link" title="Линк"/>
+	<set type="text" class="w300" name="seo_t" title="Заголовок страницы" />
+	<set type="textarea" cols="40" rows="4" name="seo_d" title="Описание(description)" />
+	<set type="textarea" cols="40" rows="4" name="seo_k" title="Ключевые слова(keywords)" />
+</a>
+
+<a title="Обработка изображений" name="conf">
+<set name="default" class="ace ace-switch ace-switch-4 btn-flat" title="Использовать эти настройки вместо дефолтных" type="checkbox" cont="1" />
+ <set name="max_x" class="w50" title="Ширина основного фото" type="text"  />
+ <set name="max_y" class="w50" title="Высота основного фото" type="text"  />
+ <set name="prop" class="ace ace-switch ace-switch-4 btn-flat" title="Сохранять пропорции" type="checkbox" cont="1" />
+ <set name="prew_x" class="w50" title="Ширина иконки" type="text"  />
+ <set name="prew_y" class="w50" title="Высота иконки" type="text"  />
+ <set name="prew_p" class="ace ace-switch ace-switch-4 btn-flat" title="Сохранять пропорции" type="checkbox" cont="1" />
+</a>
+
+</sets>

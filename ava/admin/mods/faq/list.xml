@@ -1,0 +1,9 @@
+<a>
+<set name="id" class="w80" title="id"  />
+<set name="date_pub" class="w120" title="дата публикации"  />
+<set name="title" class="w200" title="автор" />
+<set name="short" class="w400" title="вопрос" />
+<set name="tag" class="w200" title="Рубрика" />
+
+
+</a>

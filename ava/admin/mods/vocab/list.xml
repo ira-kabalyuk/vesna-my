@@ -1,0 +1,6 @@
+<a>
+	<set title="id" name="id" class="w30"/>
+	<set name="ln" title="язык" class="w300"/>
+	<set name="name" title="переменная" class="w200"/>
+	<set name="title" title="перевод" class="w200"/>
+</a>	

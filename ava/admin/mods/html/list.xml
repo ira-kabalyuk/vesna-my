@@ -1,0 +1,10 @@
+<a>
+<set name="id" class="w100" title="id" />
+<set name="title" class="w400" title="Заголовок страницы" />
+<set name="link" class="w200" title="Ссылка" />
+
+
+
+</a>
+
+

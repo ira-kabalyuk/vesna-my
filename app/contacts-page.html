@@ -1,0 +1,62 @@
+{% extends "template.html" %}
+{% import "macros.html" as myMacros %}
+
+{% block content %}
+<main class="main contacts-page">
+  <section class="main-top-section top-position-section light-blue">
+    <div class="pagewrap">
+     <div class="head-block">
+      <div class="map-wrap">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17590.957688665087!2d30.464107618111807!3d50.45097074608941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce82393afd3f%3A0x717d51c9d0e2304c!2z0L_RgNC-0YHQvy4g0J_QvtCx0LXQtNGLLCAzMCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1523965867173" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+     </div>
+     <div class="col-33 map-descr-wrap">
+      <div class="head-block-content flex">
+        <div class="main-top">
+          <div class="head-block-descr">
+            <div class="descr-wrap coordinates-wrap">
+              <p class="b">Наши координаты:</p>
+              <ul class="contacts__info-item contacts">
+                <li><i class="icon icon-location"></i>Пр. Победы, 30, к.1</li>
+                <li><i class="icon icon-mail"></i>problem_skin@bigmir.net</li>
+              </ul>
+              <ul class="contacts__info-item schedule">
+                <li><i class="icon icon-calendar"></i>Пн-Пт: с 11:00 до 20:00</li>
+                <li>Без выходных</li>
+              </ul>
+              <ul class="contacts__info-item phones">
+                <li><i class="icon icon-phone"></i>+38 (044) 236 60 82</li>
+                <li>+38 (068) 948 71 74</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="contact-section">
+  <div class="pagewrap">
+    <div class="colwrap">
+      <div class="col-33">
+        <h2 class="content-title line-left">Записаться на бесплатную консультацию</h2>
+        <p class="sub-title i">Гарантируем конфиденциальность и обязуемся не передавать Вашу личную информацию третьим лицам.</p>
+      </div>
+      <div class="col-33">
+        <div class="form-wrap">
+          <form class="form" action="">
+            <input class="form-input input-name" type="text" placeholder="ФИО" required>
+            <input class="form-input input-phone" type="tel" placeholder="Телефон" required>
+            <button class="button red button--pipaluk button--inverted  button--round-s button--text-thick">Записаться <span>на консультацию</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+
+{% endblock %}
+
+

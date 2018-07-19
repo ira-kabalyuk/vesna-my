@@ -1,0 +1,6 @@
+<a>
+<set name="id" title="id" class="w30"/>
+<set name="sort" title="sort" class="w100 sort"/>
+<set name="img" title="картинка" class="w200"/>
+<set name="descr" title="описание" class="w300"/>
+</a>

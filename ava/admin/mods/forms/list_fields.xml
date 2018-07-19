@@ -1,0 +1,7 @@
+<a>
+<set name="id" class="w50" title="id" />
+<set name="title"  class="w400" title="название" />
+<set name="name"  class="w200" title="имя" />
+<set name="type" class="w200" title="тип" />
+
+</a>

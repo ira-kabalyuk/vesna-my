@@ -1,0 +1,9 @@
+<a>
+<set name="id" title="id" class="w30" />
+<set name="img" title="avatar" class="w100" />
+<set name="name" title="name" class="w300" />
+<set name="email" title="email" class="w300" />
+<set name="payd" title="payd" class="w30" />
+<set name="type" title="type" class="w100" />
+<set name="city" title="city" class="w300" />
+</a>

@@ -1,0 +1,29 @@
+<set>
+<a name="main" title="Свойства Блога">
+<set name="date_pub" type="date" id="d1" class="w200" title="Дата публикации" />
+<set name="time" type="text" class="w100" title="Время публикации" />
+<set name="title" type="text" class="w500" title="Заголовок" />
+<set name="rubr_id" type="select" class="w400" multy="1" title="Рубрика" cont="#sql:select id,title from news_rubric where parent_id=$rel" />
+<!--set name="tag_id" type="list_checkbox" title="Теги" cont="#sql:select id,title from news_tag order by title" /-->
+<set name="short" type="textarea" rows="5" cols="100"  w="700" h="200"  title="Анонс" />
+<set name="descr" type="editor"   w="960" h="500"  title="Основное содержание" />
+</a>
+
+<a name="meta" title="Метаданные">
+<!--set name="anons" type="textarea"  class="w400" rows="6" cols="80" title="Краткое описание(для главной)" /-->
+<set name="meta-top" type="img" width="280" class="w200" path="uploads/news" json="rx:389,ry:198,prop:0,path:uploads/news,crop:1" title="Фото для главной(398x198)" />
+<set name="meta-face" type="img" width="280" class="w200" path="uploads/news" json="rx:280,ry:192,prop:0,path:uploads/news,crop:1" title="Фото для плитки(280x280)" />
+<set name="meta-big" type="img" class="w600" width="100" path="uploads/news" json="rx:940,ry:466,prop:0,path:uploads/news,crop:1" title="Большая картинка (940x466)" />
+
+<set name="meta-author" type="text" class="w300" title="Автор"/>
+
+</a>
+
+
+<a name="seo" title="SEO">
+<set name="guid" type="text" class="w400" title="Ссылка" />
+<set name="seo_t" type="text" class="w400" title="Тайтл" />
+<set name="seo_k" type="textarea" class="w400" title="Ключевые слова" />
+<set name="seo_d" type="textarea" class="w400" title="Дискриптор" />
+</a>
+</set>

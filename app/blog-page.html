@@ -1,0 +1,24 @@
+	{% extends "template.html" %}	
+	{% import "macros.html" as myMacros %}
+
+	{% block content %}
+	<main class="main blog-page">	
+		
+		<section class="main-blog-section">
+			<div class="pagewrap">				
+				<h2 class="content-title">Блог</h2>
+				<ul class="blog__list">
+						{{ myMacros.blogList(className="md hov", imgPath="images/img-1.jpg", showSpan=true, text="Лучший подарок к весенним праздникам — профессиональная косметика по выгодным ценам!") }}
+						{{ myMacros.blogList(className="md hov", imgPath="images/img-2.jpg", showSpan=true, text="Лучший подарок к весенним праздникам — профессиональная косметика по выгодным ценам!") }}
+						{{ myMacros.blogList(className="md hov", imgPath="images/img-2.jpg", showSpan=true, text="Лучший подарок к весенним праздникам — профессиональная косметика по выгодным ценам!") }}
+                        {{ myMacros.blogList(className="md hov", imgPath="images/img-1.jpg", showSpan=true, text="Лучший подарок к весенним праздникам — профессиональная косметика по выгодным ценам!") }}
+                        {{ myMacros.blogList(className="md hov", imgPath="images/img-2.jpg", showSpan=true, text="Лучший подарок к весенним праздникам — профессиональная косметика по выгодным ценам!") }}
+						{{ myMacros.blogList(className="md hov", imgPath="images/img-1.jpg", showSpan=true, text="Лучший подарок к весенним праздникам — профессиональная косметика по выгодным ценам!") }}
+                </ul>
+                <div class="content-link-wrap">
+                    <a class="content-link" href="">Смотреть все статьи</a>
+                </div>				
+			</div>
+		</section>		
+	</main>
+	 {% endblock %} 

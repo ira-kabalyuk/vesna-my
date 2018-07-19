@@ -1,0 +1,5 @@
+<a>
+<set name="id" title="id" class="w50" />
+<set name="login" title="login" class="w200" />
+<set name="name" title="имя" class="w200" />
+</a>

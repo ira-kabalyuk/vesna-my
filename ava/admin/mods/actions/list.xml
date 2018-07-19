@@ -1,0 +1,9 @@
+<a>
+<set name="id" class="w80" title="id"  />
+
+<set name="title" class="w400" title="название" />
+<set name="link" class="w400" title="Ссылка" />
+
+
+
+</a>

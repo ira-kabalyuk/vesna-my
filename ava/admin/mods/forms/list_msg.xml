@@ -1,0 +1,7 @@
+<a>
+<set name="id" class="w50" title="id" />
+<set name="data_add" class="w150 t8" title="создано" />
+<set name="title" class="w500" title="название формы" />
+<set name="ip" class="w150" title="ip адрес" />
+<set name="status" class="w200" title="статус" />
+</a>

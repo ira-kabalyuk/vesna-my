@@ -1,0 +1,6 @@
+<a>
+<set name="email" type="text" titl="Email" err="не введено или некорректыый E-mail" check="2" /> 
+<set name="passw" type="password" titl="пароль (не менее 6 символов)"  /> 
+<set name="is_ban" type="checkbox" titl="заблокирован" cont="1"  />
+<set name="group_id" type="select" titl="группа пользователей" cont="#sql:select id,title from customers_group"  />  
+</a>
